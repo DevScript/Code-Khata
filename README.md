@@ -1,7 +1,7 @@
 <!-- <img src="img/MSFTStudentambassadors.gif" width="900" height="400"/> -->
 
 # Code Khata
-It is an intiiative undertaken by Student Ambassadors Club, Jamshoro for students who are absolute begineers in programming and want to learn it. This repository will contain all the possible resource in terms of code as well as illusatrations for the code so that any new comer can grasp the topic.
+It is an intiiative undertaken by DevScript for students/young hackers who are absolute begineers in programming and want to learn it. This repository will contain all the possible resource in terms of code as well as illusatrations for the code so that any new comer can grasp the topic.
 # How to contribute
 1. You can contribute in terms of Code
 2. You can contribute in terms of improving Documentation
