@@ -1,0 +1,59 @@
+#include <Servo.h>  // including servo library
+
+Servo servol;  // defining servo
+Servo servo2; //definign servo
+int motion;    //declaring motion sensor variable that responsible to control servo when motion is detected
+
+void setup() {
+
+  pinMode (12, OUTPUT);    //setting output mode to connect LED
+  pinMode (3, INPUT);     //setting input mode for pir to detect motion and sent to arduino 
+  servol.attach (9);      // attaching servo to the designated pin
+  servo2.attach (5);      // attaching servo to the designated pin
+}
+
+void loop() {                  // loop function starts thats a recurring function 
+
+  motion = digitalRead (3);      //extracting value from Pir Sensor through digital pin 3 
+
+  if (motion == HIGH) {         // comuting values either motion is detected or not 
+
+    servol.write (180);         //if motion detected roate servo to 180 degree(open the door)
+    servo2.write(0);            //if motion detected roate servo to 0 degree(open the door)   remember dors are connected in opposite direction
+    delay(10);
+    delay (4000);             // door delay intervl (door open time)
+
+    servol.write(0);         // bring back door to orignal state (closed state)
+    servo2.write(180);      // bring back door to orignal state (closed state)
+
+    delay(10);              // delay set to turn on Green LED
+
+    delay(2000);          // delay set to turn off red LED
+
+    digitalWrite(12, HIGH);   // signal to green leed for power on 
+    delay(6000);
+    digitalWrite(12, LOW);         //signal to red LED to power off
+
+    delay(2000);
+
+    servol.write(180);
+    servo2.write(0);
+
+    delay(10);
+    delay (4000);
+
+    servol.write(0);
+    servo2.write (180);
+
+    delay(10);
+
+  } else {
+
+    digitalWrite(12, LOW);
+    servol.write(0);
+    servo2.write(180);
+
+    delay(15);
+
+  }
+}
