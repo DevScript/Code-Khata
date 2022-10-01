@@ -1,3 +1,8 @@
+
+
+
+
+
 #include <Servo.h>  // including servo library
 
 Servo servol;  // defining servo
@@ -51,9 +56,9 @@ void loop() {                  // loop function starts thats a recurring functio
 
     digitalWrite(12, LOW);
     servol.write(0);
-    servo2.write(180);
+    servo2.write(180);       
 
-    delay(15);
+    delay(15);   // delay for 0.15ms
 
   }
 }
