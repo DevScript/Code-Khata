@@ -4,18 +4,18 @@ void BubbleSort(List list) {
   int n = list.length;
   int i, j;
   for(i=0;i<n;i++) {
-    for(j=0;j<n-i-1; j++) {
-      if(list[j]>list[j+1]) {
-        swap(list, j);
+    for(j=i+1;j<n; j++) {
+      if(list[i]>list[j]) {
+        swap(list, i, j);
       }
     }
   }
 }
 
-void swap(List list, int j) {
-  int temp = list[j];
-  list[j]=list[j+1];
-  list[j+1]=temp;
+void swap(List list, int i, int j) {
+  int temp = list[i];
+  list[i]=list[j];
+  list[j]=temp;
 }
 
 void main() {
