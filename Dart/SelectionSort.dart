@@ -1,4 +1,4 @@
-void BubbleSort(List list) {
+void SelectionSort(List list) {
   if(list.length == 0) return;
 
   int n = list.length;
@@ -20,6 +20,6 @@ void swap(List list, int i, int j) {
 
 void main() {
   List list = [3,7,1,9,4,6,8];
-  BubbleSort(list);  
+  SelectionSort(list);  
   print("Sorted list is: $list");
 }
