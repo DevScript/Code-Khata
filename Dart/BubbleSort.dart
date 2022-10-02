@@ -2,7 +2,7 @@
 
 
 //Method to sort the list, where the list is passed as an argument
-void BubbleSort(List list) {     //Function to do the sorting, where the list is passed as an argument
+void BubbleSort(List list) {     
   if(list.length == 0) return;   //Checks if the list has elements or not. If no element present, it exits the function
 
   int n = list.length;
