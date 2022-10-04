@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .containerbox {
+            height: 95vh;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+        }
+
+        .box {
+            background: rgb(60 0 0);
+            flex-grow: 1;
+        }
+
+        .box2 {
+            font-family: monospace;
+            color: white;
+            font-size: 35px;
+            text-align: center;
+            background: rgba(85, 4, 4, 0.829);
+            animation: flexanimation 1s cubic-bezier(0.76, 0.05, 0.58, 1) 1s infinite alternate backwards;
+        }
+
+        @keyframes flexanimation {
+            100% {
+                flex-grow: 5;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="containerbox">
+        <div class="box"></div>
+        <div class="box2">Animation Created with Flex-grow Property</div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
+
