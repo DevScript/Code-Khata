@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <style>
+         .box {
+            display: flex;
+            background-color: rgb(17, 185, 190);
+            height: 100px;
+         }
+         .box > div {
+            background-color: white;
+            text-align: center;
+            line-height: 75px;
+            text-align: center;
+            font-size: 30px;
+            width: 100px;
+            margin: 5px;
+  }
+         div {
+            animation: test 3s infinite;
+         }
+         @keyframes test {
+            50% {
+               flex-basis: 100px;
+}     }
+      </style>
+   </head>
+   <body>
+      <h1>Flex-basis Animation</h1>
+      <div class = "box">
+         <div style="background-color: greenyellow">1</div>
+         <div style="background-color: goldenrod">2</div>
+         <div style="background-color: green">3</div>  
+         <div style="background-color: red">4</div>
+         <div  style = "flex-basis: 350px">5</div>
+         <div style="background-color: grey">6</div>  
+         <div style="background-color: plum">7</div>
+         <div style="background-color: darkorchid;">8</div>
+         <div style="background-color: sandybrown">9</div>
+         <div style="background-color: brown">10</div>  
+        </div>
+   </body>
+</html>
+
