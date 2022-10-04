@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: DodgerBlue;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 50px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  animation: test 5s infinite;
+}
+
+@keyframes test {
+  100% { flex: 1;}
+ 
+} 
+
+</style>
+</head>
+<body>
+<h1>Flex Animation</h1>
+
+<div class="flex-container">
+  <div style="background-color: rgb(131, 243, 131);">1</div>
+  <div style="background-color: rgb(236, 83, 236);">2</div>
+  <div style="background-color: rgb(226, 25, 159);">3</div>  
+  <div style="background-color: rgb(238, 108, 115);">4</div>
+  <div style="background-color: rgb(238, 241, 12);">5</div>
+  <div style="background-color: rgb(221, 161, 122);">6</div>  
+  <div style="background-color: rgb(130, 196, 240);">7</div>
+  <div style="background-color: rgb(236, 69, 105);">8</div>
+</div>
+</body>
+</html>
+
+
