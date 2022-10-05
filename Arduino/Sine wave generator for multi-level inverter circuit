@@ -1,0 +1,18 @@
+void setup() {
+  // put your setup code here, to run once:
+  pinMode(2, OUTPUT);     // setting output mode to pin 2
+  pinMode(3, OUTPUT);     // setting output mode to pin 3
+}
+
+void loop() {
+  digitalWrite(2, HIGH);        //setting pin 2 output to high 
+  digitalWrite(4, HIGH);        //setting pin 4 outut to high
+  delay(10);                       // wait for a second
+  digitalWrite(2, LOW);            //setting output for pin 2 to low 
+  digitalWrite(4, LOW);            //setting output for pin 4 to low
+  digitalWrite(3, HIGH);          //setting output for pin 3 to high
+  digitalWrite(5, HIGH);          //setting output for pin 5 to high
+  delay(10);                       // wait for a second
+  digitalWrite(3, LOW);            //setting output for pin 3 to low
+  digitalWrite(5, LOW);           //setting output for pin 5 to low
+}
