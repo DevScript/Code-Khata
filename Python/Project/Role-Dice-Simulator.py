@@ -7,7 +7,7 @@ background_color = "#0D865D" # kind of green
 root = Tk()
 root.geometry("960x900")
 
-first_image_path = "./0.png"
+first_image_path = "./0.png" # sides of a die
 second_image_path = "./0.png"
 
 first_dice_image = ImageTk.PhotoImage(Image.open(first_image_path))
