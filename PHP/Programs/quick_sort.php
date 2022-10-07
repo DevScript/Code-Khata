@@ -20,13 +20,12 @@ function quick_sort($array)
 			$great[] = $value;
 		}
 	}
-    var_dump($lower , $great);die;
 	return array_merge(quick_sort($lower),array($pivot_key=>$pivot),quick_sort($great));
 }
  
 $array = array(-5, 3, 0, 7, 5, -1, 4, 1 , 9, 2);
 echo '<br />';
-echo 'Input Array : '.implode(',',$array).'\n';
+echo 'Input Array : '.implode(',',$array);
 echo '<br />';
 $array = quick_sort($array);
 echo '<br />';
