@@ -2,6 +2,11 @@ package DP_Problems;
 
 // Program to find Longest Common Subsequence from a given String using Dynamic Programming
 
+/* 
+Dynamic programming amounts to breaking down an optimization problem into simpler sub-problems, 
+and storing the solution to each sub-problem so that each sub-problem is only solved once.
+*/
+
 public class LongestCommonSubsequence_1143 {
 
     public int longestCommonSubsequence(String text1, String text2) {
