@@ -16,11 +16,11 @@ npx create-react-app my-first-app //my-first-app = your-app-name
 It will take some time. After this type cd my-first-app, it will take you to your project folder.
 Now type npm start, to start your project in the browser. You will see the following page in your browser.
 
-![image](./assets/main.png)
+![image](./assets/starting.png)
 
 If you move towards the project files, there will be a file named App.js in src folder. All your code will be in this file.
 
-![image](./assets/welcome.png)
+![image](./assets/app.png)
 
 And if look into the code in App.js file, there is a function called App which is getting exported at the end of the code and rendering our App. Let’s change our Code and render Hello World in our browser using React.
 
@@ -107,7 +107,7 @@ We call the components like the HTML elements, as you can see in the code. After
 ### **Functional components in Files**
 As our component size gets bigger, we have to manage them in separate files. Let’s move the above component in a separate file. So, create a new folder in src folder named Components and inside create a file named Welcome with a .js extension. Then move your Welcome function inside that file and at the end export that function. You can see the code below:
 
-![image](./assets/component-files.png)
+![image](./assets/component.png)
 
 The next step is to import this function in our main App file, for this we use import statement in a very top-level in `App.js` file, (which you can see in the code below). Make sure you add correct path of Welcome component. And now if you run the app, you will see the same output as before.
 
@@ -300,12 +300,12 @@ function Cities() {
 ```
 In this code, we have an array and we are mapping to that array and returning an li tag element which is getting enclosed in a ul tag. Your output will look like below:
 
-![image](./assets/list.png)
+![image](./assets/lists.png)
 
 ### **Keys**
 If you look in the console of your browser, you will see an error about keys, which is preferred practice for list children. The error would look like below:
 
-![image](./assets/keys.png)
+![image](./assets/list-keys.png)
 
 Keys allow React to keep track of elements. Keys help React identify which items have changed, are added, or are removed. Keys should be given to the elements inside the array to give the elements a stable identity. Keys need to be unique to each sibling. But they can be duplicated globally. For this reason we have introduce keys in our children which are li tags. Change following things in your code.
 
@@ -457,7 +457,7 @@ npm i -D react-router-dom@latest
 ```
 There is a folder structure that’s specified for routing. You have create a folder the src folder, and name it Pages, and inside that folder, create multiple files and filed them with code as below:
 
-![image](./assets/routing-pages.png)
+![image](./assets/routing.png)
 
 The next step is to route the pages using React Router DOM. Head towards our Top Level, which is the App function in App.js file.
 First import all the pages in our App.js file
