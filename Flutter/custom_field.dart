@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:yourapp/res/app_colors.dart';
 
-class AuthField extends StatelessWidget {
+class CustomField extends StatelessWidget {
   final TextEditingController controller;
   final String label;
   final String hintText;
