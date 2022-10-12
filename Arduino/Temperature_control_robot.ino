@@ -1,7 +1,4 @@
-//Author: Xavier Richard
 //Project Name: Temperature control bot
-//Code Difficulty: Basic
-//Workshop: KIT - Robotics, Basic & intermediate
 //Serial communication configuration -  9600
 // Open the serial monitor and set the baud rate to 9600 and see the temperature
 
