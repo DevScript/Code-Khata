@@ -1,0 +1,87 @@
+
+{% extends "baseadmin.html" %}
+
+
+        
+{% block title%}
+quiz
+{% endblock %}
+
+
+{% block body %}
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-header card-header-primary">
+            <h4 class="card-title ">VEIW ALL STUDENTS RESULT</h4>
+            <p class="card-category"> NOTE : Only the first attempt shall be counted</p>
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table">
+                 
+                <thead class=" text-primary">
+                    <th>
+                        NAME
+                    </th>
+                  <th>
+                    TOTAL
+                  </th>
+                  <th>
+                    ATTEMPT
+                  </th>
+                  <th>
+                    CORRECT
+                 </th>
+                 <th>
+                    WRONG
+                </th>
+                <th>
+                    Percentage
+                </th>
+                </thead>
+                {% for idx in list_result  %}
+                <tbody >
+                  <tr> 
+                    <td>
+                        {{idx.r_name}}
+                    </td>
+                    <td>
+                      {{idx.total_question}}
+                    </td>
+                    <td>
+                        {{idx.total_question}}
+                      </td>
+                    <td>
+                        {{idx.answer}}
+                    </td>
+                    <td>
+                        {{ idx.wrong }}
+                    </td>
+                    <td class="text-primary">
+                         {{ idx.percentage }} %
+                    </td>
+            
+                  </tr>
+                  
+                </tbody>
+                {% endfor %}
+              </table>
+            </div>
+          </div>
+
+    </div>
+    <!-- your footer here -->
+  </div>
+</footer>
+</div>
+</div>
+
+
+
+{% endblock %}
+
+
+
+

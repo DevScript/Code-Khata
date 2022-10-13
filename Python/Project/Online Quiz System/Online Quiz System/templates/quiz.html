@@ -1,0 +1,49 @@
+
+{% extends "basestudent.html" %}
+
+
+        
+            {% block title%}
+            quiz
+            {% endblock %}
+          
+
+    {% block body %}
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header card-header-primary">
+                <h4 class="card-title ">INSTRUCTION FOR QUIZ</h4>
+                <p class="card-category"> Press Start Button to Start Quiz</p>
+              </div>
+              <link rel="stylesheet" href="../static/css/quiz1.css">
+              <body >
+          
+                  <div class="home-box custom-box">
+                      <h3 style="font-size: xx-large; " ><b>INSTRUCTION</b></h3>
+                      <p style="padding: 8px 115px ">
+                          <ul>
+                        <li>  Total Number of questions: <samp class="total-questions">{{l_question}}</samp></li> <br>
+                      <li> Only 1st Attempt will be counted </li><br>
+                     <li> You can try Multiple times and better your self</li></p>
+                       </ul>
+                      <a href="/quizstart"><button type="button" class="btn" > START QUIZ</button></a>
+                  </div>
+                  
+              </body>
+    
+        </div>
+        <!-- your footer here -->
+      </div>
+    </footer>
+    </div>
+    </div>
+
+
+
+    {% endblock %}
+
+
+
+

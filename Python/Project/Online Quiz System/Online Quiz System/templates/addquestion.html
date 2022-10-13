@@ -1,0 +1,83 @@
+
+{% extends "baseadmin.html" %}
+
+
+        
+{% block title%}
+ADD QUESTION
+{% endblock %}
+
+
+
+  
+{% block body %}
+<div class="container-fluid">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-header card-header-primary">
+            <h4 class="card-title ">ADD A QUESTION</h4>
+            <p class="card-category">  Select the correct option to store  </p>
+          </div>
+          <div class="card-body">
+            <form action="/submitaddquestion" method="POST" >
+            <div class="question-text" style="    font-size:22px ;
+            color: #000000;
+            line-height: 28px;
+            font-weight:400 ;
+            padding: 20px 0px;
+            margin: 0;">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="form-group">
+                              <label class="bmd-label-floating">Question</label>
+                              <input type="text" placeholder="Enter the question here" name=addquestion class="form-control" >
+                            </div>  
+                        </div> 
+                        <div class="col-md-4">
+                            <div class="form-group">
+                              <label class="bmd-label-floating">Question ID</label>
+                              <input type="number" placeholder="Enter the question ID" name=addquestionID class="form-control" >
+                            </div>  
+                        </div>          
+               
+                    </div>
+            
+            <div  class="option-container" style="    background-color: #cccc ; "  >
+
+                <input type="radio"  name="123" class="option" value="1"  required >
+                <label  style="color: black;"><input type="text" placeholder="Option1" name="addoption1"  required  ></label><br>
+              
+                <input type="radio"   name="123" class="option" value="2" required >
+                <label  style="color: black;"><input type="text"name="addoption2" placeholder="Option2" required  ></label><br>
+            
+                <input type="radio"   name="123" class="option" value="3" required > 
+                <label style="color: black;" ><input type="text" name="addoption3" placeholder="Option3" required ></label><br>
+
+                <input type="radio"   name="123" class="option" value="4" required >
+                <label style="color: black;" ><input type="text" name="addoption4" placeholder="Option4" required ></label>
+
+            </div>
+            <br>
+
+            <div class="contaier">
+                <a href="/submitaddquestion"><button type="submit" value=""  class="btn" style="padding-right: 500px;background-color:#9E169E ;color: white; " ><b style="text-align: center;">ADD QUESTION</b> </button></a>
+            </div>
+        </form>
+        </div>
+            </div>
+          </div>
+
+
+    <!-- your footer here -->
+  </div>
+</div>
+</div>
+
+
+
+
+
+<link rel="stylesheet" href="../static/css/quiz1.css">
+
+
+    {% endblock %}        

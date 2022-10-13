@@ -1,0 +1,68 @@
+{% extends "baseadmin.html" %}
+
+
+{% block title %}
+    veiw products
+{% endblock%}
+
+{% block body %}
+
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-header card-header-primary">
+            <h4 class="card-title ">VEIW ALL STUDENTS RECORD</h4>
+            <p class="card-category"> All are the NAME ,EMAIL ,PASSWORDS are displaed below</p>
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table">
+                 
+                <thead class=" text-primary">
+                    <th>
+                        #
+                    </th>
+                    <th>
+                        NAME
+                    </th>
+                  <th>
+                    EMAIL
+                  </th>
+                  <th>
+                    PASSWORD
+                  </th>
+                </thead>
+                {% for idx  in range(0,length)  %}
+                <tbody >
+                  <tr>
+                      
+                    <td>
+                      {{idx+1}}
+                    </td>
+                    <td>
+                      {{list_student[idx].student_name}}
+                    </td>
+                    <td>
+                        {{list_student[idx].student_email}}
+                    </td>
+                    <td class="text-primary">
+                        {{list_student[idx].student_pswd}}
+                    </td>
+            
+                  </tr>
+                  
+                </tbody>
+                {% endfor %}
+              </table>
+            </div>
+          </div>
+
+    </div>
+    <!-- your footer here -->
+  </div>
+</footer>
+</div>
+</div>
+
+{% endblock%}

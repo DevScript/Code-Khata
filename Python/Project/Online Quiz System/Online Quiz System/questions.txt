@@ -1,0 +1,11 @@
+1,What is the capital of PAKISTAN ?,Lahore,Multan,Karachi,Islamabad,Islamabad
+2,What is 2 + 2 = ? ,4,5,6,7,4
+3,How many colors are there in a rainbow?,7,14,8,1,7
+4,How many sides are there in a triangle?,One,Two,Three,Four,Three
+5,Which animal is known as the 'Ship of the Desert?,Cat,Dog,Lion,Camel,Deer,Camel
+6,How many letters are there in the English alphabet?,26,28,24,22,26
+7,In which direction does the sun rise?,East,North,South,West,East
+8,What do you call a type of shape that has five sides?,Triagle,Pentagon,Circle,Hexagon,Pentagon
+9,Which month of the year has the least number of days?,January,October,Febuary,September,Febuary
+10,How many equal sides does an isosceles triangle have?,3,2,1,0,2
+11,what is 5 +3 = ?,2,4,5,8,8
