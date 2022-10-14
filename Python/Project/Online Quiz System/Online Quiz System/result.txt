@@ -1,0 +1,3 @@
+Ali,10,6
+Afzal,10,8
+Hassan,10,3

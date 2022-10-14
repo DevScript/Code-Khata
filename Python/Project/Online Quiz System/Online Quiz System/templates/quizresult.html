@@ -1,0 +1,124 @@
+
+{% extends "basestudent.html" %}
+
+
+        
+{% block title%}
+quiz-result
+{% endblock %}
+
+
+{% block body %}
+
+
+<link rel="stylesheet" href="../static/css/quiz1.css">
+<body>
+
+    <div class="result-box custom-box" style="text-align: center;">
+        <h1 style="  font-size: 36px;
+        line-height:42px ;
+        color: #9E169E;"> QUIZ RESULT</h1>
+        <table style="width: 100%;
+        border-collapse:collapse ;
+        margin: 30px 0;">
+            <tr>
+               <td style="  border:1px solid #cccc;
+               padding: 8px 15px;
+               font-weight: 500;
+               color: #000;
+               width: 50%;
+               text-align: center;
+               font-size: 18px;"> Total Questions</td>
+               <td style="  border:1px solid #cccc;
+               padding: 8px 15px;
+               font-weight: 500;
+               color: #000;
+               width: 50%;
+               text-align: center;
+               font-size: 18px;"><span class="total-question">{{l_question}}</span></td>
+            </tr>
+            <tr>
+                <td style="  border:1px solid #cccc;
+                padding: 8px 15px;
+                font-weight: 500;
+                color: #000;
+                width: 50%;
+                text-align: center;
+                font-size: 18px;">Attempt</td>
+                <td style="  border:1px solid #cccc;
+                padding: 8px 15px;
+                font-weight: 500;
+                color: #000;
+                width: 50%;
+                text-align: center;
+                font-size: 18px;"><span class="total-attempt">{{l_question}}</span></td>
+            </tr>
+            <tr>
+                <td style="  border:1px solid #cccc;
+                padding: 8px 15px;
+                font-weight: 500;
+                color: #000;
+                width: 50%;
+                text-align: center;
+                font-size: 18px;">Correct</td>
+                <td style="  border:1px solid #cccc;
+                padding: 8px 15px;
+                font-weight: 500;
+                color: #000;
+                width: 50%;
+                text-align: center;
+                font-size: 18px;"><span class="total-correct">{{quiz_score}}</span></td>
+            </tr>
+            <tr>
+                <td style="  border:1px solid #cccc;
+                padding: 8px 15px;
+                font-weight: 500;
+                color: #000;
+                width: 50%;
+                text-align: center;
+                font-size: 18px;">Wrong</td>
+                <td style="  border:1px solid #cccc;
+                padding: 8px 15px;
+                font-weight: 500;
+                color: #000;
+                width: 50%;
+                text-align: center;
+                font-size: 18px;"><span class="total-wrong">{{l_question - quiz_score }}</span></td>
+            </tr>
+            <tr>
+                <td style="  border:1px solid #cccc;
+                padding: 8px 15px;
+                font-weight: 500;
+                color: #000;
+                width: 50%;
+                text-align: center;
+                font-size: 18px;">Percentage</td>
+                <td style="  border:1px solid #cccc;
+                padding: 8px 15px;
+                font-weight: 500;
+                color: #000;
+                width: 50%;
+                text-align: center;
+                font-size: 18px;"><span class="total-wrong">{{(quiz_score/l_question)*100}} %</span></td>
+            </tr>
+            <tr>
+                <td style="  border:1px solid #cccc;
+                padding: 8px 15px;
+                font-weight: 500;
+                color: #000;
+                width: 50%;
+                text-align: center;
+                font-size: 18px;">Your total score</td>
+                <td style="  border:1px solid #cccc;
+                padding: 8px 15px;
+                font-weight: 500;
+                color: #000;
+                width: 50%;
+                text-align: center;
+                font-size: 18px;"><span class="total-score">{{quiz_score}}</span></td>
+            </tr>
+        </table>
+
+    </div>
+</body>
+{% endblock %}

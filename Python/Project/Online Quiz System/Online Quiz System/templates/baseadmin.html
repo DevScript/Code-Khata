@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>
+    {% block title%}
+
+    {% endblock %}
+  </title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  <!-- Material Kit CSS -->
+  <link href="../static/css/baseadmin.css" rel="stylesheet" />
+</head>
+
+<body>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <div class="wrapper ">
+    <div class="sidebar" data-color="purple" data-background-color="white">
+      <!--
+      Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
+
+      Tip 2: you can also add an image using data-image tag
+  -->
+      <div class="logo" >
+        
+        <div class="simple-text logo-normal">
+          
+          DEPARTEMENT STORE 
+        </div>          
+   
+      </div>
+      
+      <div class="sidebar-wrapper">
+        <ul class="nav">
+          
+          <li class="nav-item active  ">
+            <a class="nav-link" href="#0"
+               class="material-icons">dashboard</i>
+              <p>Dashboard</p>
+            </a>
+          </li>
+          <!-- your sidebar here -->
+        </ul>
+      </div>
+    </div>
+    <div class="main-panel">
+      <!doctype html>
+      <div class="container-fluid navbar sticky-top">
+        <p style="background-color:  rgb(158, 22, 158); color: white; " class="float-end p-4 container-fluid "  >
+
+            Home page   
+
+            &nbsp&nbsp   <span >  <b> WELCOME YOU ARE LOGIN AS ADMIN</b>  </span>
+            &nbsp&nbsp Search <input type="search">  
+        </p>
+    </div>
+      <html lang="en">
+      
+      <head>
+        <title>Hello, world!</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <!--     Fonts and icons     -->
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+        <!-- Material Kit CSS -->
+        <link href="../static/css/baseadmin.css" rel="stylesheet" />
+      </head>
+      
+      <body>
+        <div class="wrapper ">
+          <div class="sidebar" data-color="purple" data-background-color="white">
+            <!--
+            Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
+      
+            Tip 2: you can also add an image using data-image tag
+        -->
+            <div class="logo" style="background-color:white;">
+              <a class="simple-text logo-mini">
+                <img src="../static/images/images.jpg" height="150px" width="150px">
+              </a>
+              <a  class="simple-text logo-normal ,text-align-center" >
+                <p style="color:  rgb(158, 22, 158)" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ADMIN  LOGIN</p>
+              </a>
+            </div>
+            <div class="sidebar-wrapper">
+              <ul class="nav">
+                <li class="nav-item active  ">
+                  <a class="nav-link" href="/indexadmin">
+                    <i class="material-icons">dashboard</i>
+                    <p>ADMIN Dashboard</p>
+                  </a>
+                </li>
+                <li class="nav-item active  ">
+                  <a class="nav-link" href="/addquestion">
+                    <p>ADD A QUESTION</p>
+                  </a>
+                </li>
+                <li class="nav-item active  ">
+                  <a class="nav-link" href="/veiwquestion">
+                    <p>Veiw All Questions</p>
+                  </a>
+                </li>
+                <li class="nav-item active  ">
+                  <a class="nav-link" href="/veiwstudent">
+                    <p>VEIW All Students</p>
+                  </a>
+                </li>
+                <li class="nav-item active  ">
+                  <a class="nav-link" href="/veiwallresult">
+                    <p>Veiw All Student Result</p>
+                  </a>
+                </li>
+                <li class="nav-item active  ">
+                  <a class="nav-link" href="/login">
+                    <p>LOGOUT</p>
+                  </a>
+                </li>
+                <!-- your sidebar here -->
+              </ul>
+            </div>
+          </div>
+          {% block body %}
+
+          {% endblock %}
+      
+      </body>
+      
+      </html>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
+        <div class="container-fluid">
+          <div class="navbar-wrapper">
+            <a class="navbar-brand" href="javascript:;">
+          </a>
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="navbar-toggler-icon icon-bar"></span>
+            <span class="navbar-toggler-icon icon-bar"></span>
+            <span class="navbar-toggler-icon icon-bar"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end">
+              <!-- your navbar here -->
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- End Navbar -->
+
+      </div>
+
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+
+{% extends "basestudent.html" %}
+
+
+        
+{% block title%}
+quiz-start
+{% endblock %}
+
+
+
+  
+{% block body %}
+<link rel="stylesheet" href="../static/css/quiz1.css">
+
+    <body>
+
+       
+        <div class="quiz-box  custom-box">
+            <form class="form-detail" action="/submitquiz" method="POST" >
+                {% for idx in range(0,(l_question)) %}
+            <div class="question-number" style="font-size:18px ;
+            color: #9E169E;
+            font-weight:600 ;
+            border-bottom: 1px solid #cccc;
+            padding-bottom: 10px;
+            line-height: 25px;" >
+                Question &nbsp; {{list_question[idx].ID}}
+            </div>
+            <div class="question-text" style="    font-size:22px ;
+            color: #000000;
+            line-height: 28px;
+            font-weight:400 ;
+            padding: 20px 0px;
+            margin: 0;">
+                {{list_question[idx].question}} 
+            </div>
+            
+            <div  class="option-container" style="    background-color: #cccc ; "  >
+
+                <input type="radio" value="{{list_question[idx].option1}}" name="{{list_question[idx].ID}}" required class="option">
+                <label  style="color: black;">{{list_question[idx].option1}}</label><br>
+              
+                <input type="radio" value="{{list_question[idx].option2}}"  name="{{list_question[idx].ID}}"required  class="option">
+                <label  style="color: black;">{{list_question[idx].option2}}</label><br>
+            
+                <input type="radio" value="{{list_question[idx].option3}}"  name="{{list_question[idx].ID}}"required  class="option">
+                <label style="color: black;" >{{list_question[idx].option3}}</label><br>
+
+                <input type="radio" value="{{list_question[idx].option4}}"  name="{{list_question[idx].ID}}"required  class="option">
+                <label style="color: black;" >{{list_question[idx].option4}}</label>
+
+            </div>
+            <br>
+            <br>
+            {% endfor %}
+
+            <div class="contaier">
+                <a href="/submitquiz"><button type="submit" value=""  class="btn" style="padding-right: 500px;background-color:#9E169E ;color: white; " ><b style="text-align: center;">SUBMIT </b> </button></a>
+            </div>
+        </form>
+        </div>
+        
+       
+
+    </body>
+
+    {% endblock %}        

@@ -1,0 +1,48 @@
+
+{% extends "basestudent.html" %}
+
+
+        
+{% block title%}
+quiz
+{% endblock %}
+
+
+{% block body %}
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-header card-header-primary">
+            <h4 class="card-title ">QUIZ SUBMITED</h4>
+            <p class="card-category"> Only First Attempt shall be counted</p>
+          </div>
+          <link rel="stylesheet" href="../static/css/quiz1.css">
+        <body   >
+
+        <div class="home-box custom-box">
+        <b><h3 style="  font-size: 36px;  line-height:42px ; color: #9E169E; text-align: center;">QUIZ SUBMITTED</h3></b>
+        <h4 style="font-size: 23px ;text-align: center; " >Total Number of questions attempted <samp class="total-questions">{{l_question}}</samp> <h4>
+        <a href="/quiz"><button type="button" class="btn" > TRY AGAIN</button></a>  
+
+        <a href="/veiwresult"><button type="button" class="btn" > CHECK RESULT</button></a>
+
+        <a href="/studentanswer"><button type="button" class="btn" > VEIW ANSWERS</button></a>
+        </div>
+
+</body>
+
+    </div>
+    <!-- your footer here -->
+  </div>
+</footer>
+</div>
+</div>
+
+
+
+{% endblock %}
+
+
+
+
