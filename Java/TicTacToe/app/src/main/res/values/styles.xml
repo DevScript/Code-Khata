@@ -1,0 +1,47 @@
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="TableRow">
+    <item name="android:layout_width">50dp</item>
+    <item name="android:layout_height">70dp</item>
+    <item name="android:background">@color/black</item>
+    <item name="android:gravity">center_horizontal</item>
+    <item name="android:clickable">true</item>
+</style>
+
+     <style name="Cell">
+    <item name="android:layout_width">50dp</item>
+    <item name="android:layout_height">70dp</item>
+    <item name="android:layout_gravity">center</item>
+    <item name="android:gravity">center</item>
+    <item name="android:textSize">30dp</item>
+
+    <item name="android:background">@color/white</item>
+    <item name="android:maxWidth">100dp</item>
+    <item name="android:text">"@string/none"</item>
+    <item name="android:clickable">true</item>
+</style>
+    <style parent="@style/Cell" name="LeftCell">
+    <item name="android:layout_marginLeft">2dp</item>
+    <item name="android:layout_marginTop">2dp</item>
+    <item name="android:layout_marginRight">1dp</item>
+    <item name="android:layout_marginBottom">2dp</item>
+</style>
+    <style parent="@style/Cell" name="MiddleCell">
+    <item name="android:layout_marginLeft">1dp</item>
+   <item name="android:layout_marginTop">2dp</item>
+    <item name="android:layout_marginRight">1dp</item>
+    <item name="android:layout_marginBottom">2dp</item>
+</style>
+    <style parent="@style/Cell" name="RightCell">
+    <item name="android:layout_marginLeft">1dp</item>
+    <item name="android:layout_marginTop">2dp</item>
+    <item name="android:layout_marginRight">2dp</item>
+    <item name="android:layout_marginBottom">2dp</item>
+</style>
+</resources>

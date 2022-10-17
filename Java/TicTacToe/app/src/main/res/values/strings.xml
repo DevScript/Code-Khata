@@ -1,0 +1,8 @@
+<resources>
+    <string name="action_settings">Settings</string>
+    <string name="app_name"> DataFlair TicTacToe</string>
+    <string name="size_of_board">3</string>
+    <string name="X">" X "</string>
+    <string name="O">" O "</string>
+    <string name="none">" "</string>
+</resources>
