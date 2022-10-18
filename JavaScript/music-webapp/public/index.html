@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <!-- css links -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="outer-wrapper flex">
+      <!-- wrapper for music player content -->
+      <div class="music-player-wrapper flex">
+        <!-- wrapper for music info -->
+        <div class="music-info-wrapper flex">
+          <div class="music-info">Karam mangta ho</div>
+        </div>
+        <!-- wrapper for music icons -->
+        <div class="music-icons-wrapper">
+          <div class="music-icons flex down-margin">
+            <!-- previous icon -->
+            <div class="previous-btn-wrapper">
+              <i class="fa fa-step-backward fa-2x"></i>
+            </div>
+            <!-- play pause button -->
+            <div class="play-pause-btn-wrapper">
+              <i class="fa fa-play-circle fa-5x"></i>
+            </div>
+            <!-- next button -->
+            <div class="next-btn-wrapper">
+              <i class="fa fa-step-forward fa-2x"></i>
+            </div>
+          </div>
+          <!-- music timer tracker -->
+          <div class="music-timer-wrapper flex down-margin">
+            <!-- starting timer -->
+            <div class="start-timer right-margin">
+              <div class="current-time icon-color">00:00</div>
+            </div>
+            <!-- music tracker -->
+            <div class="music-tracker right-margin">
+              <input
+                type="range"
+                min="1"
+                max="100"
+                value="0"
+                class="music-slider"
+              />
+            </div>
+            <!-- ending timer -->
+            <div class="end-timer right-margin">
+              <div class="total-duration icon-color">00:00</div>
+            </div>
+          </div>
+          <!-- volume config -->
+          <div class="volume-config-wrapper flex down-margin">
+            <!-- for volume down -->
+            <div class="volume-down right-margin">
+              <i class="fa fa-volume-down icon-color"></i>
+            </div>
+            <!-- for volumen range tracker -->
+            <div class="volume-range right-margin">
+              <input
+                type="range"
+                min="1"
+                max="100"
+                value="50"
+                class="volume-slider"
+              />
+            </div>
+            <!-- for volume up -->
+            <div class="volume-up">
+              <i class="fa fa-volume-up icon-color"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- script files -->
+    <script src="js/utils.js"></script>
+    <script src="js/doubleLinkedList.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
