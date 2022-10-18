@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ***   global classes ****** */
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.down-margin {
+  margin-bottom: 25px;
+}
+
+.right-margin {
+  margin-right: 15px;
+}
+
+.icon-color {
+  color: white;
+}
+
+/* *** global classes end */
+
+.outer-wrapper {
+  width: 100%;
+  height: 100vh;
+  background-color: #243441;
+  flex-wrap: wrap;
+}
+
+.music-player-wrapper {
+  margin: 10px;
+  height: 400px;
+  width: 400px;
+  border: 3px solid #21282c;
+  box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  flex-direction: column;
+}
+
+/* styling for music information */
+
+.music-info-wrapper {
+  flex: 1;
+  width: 100%;
+}
+
+.music-info {
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+/* styling for music icons */
+
+.music-icons-wrapper {
+  width: 100%;
+}
+
+/* next pre play pause styling */
+.music-icons {
+  justify-content: space-around;
+}
+
+.play-pause-btn-wrapper i {
+  color: white;
+  cursor: pointer;
+}
+
+/* previous and next btn */
+.previous-btn-wrapper {
+  cursor: pointer;
+}
+
+.next-btn-wrapper {
+  cursor: pointer;
+}
