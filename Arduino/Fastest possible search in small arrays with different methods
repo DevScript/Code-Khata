@@ -1,0 +1,42 @@
+#include <iterator>
+#include <algorithm>
+const int NUMBERS = 60;
+
+int array [] = {
+10,20,30,40,50,60,70,80,90,100,110,120,130,140,150,160,170,180,190,200,210,220,230,240,
+250,260,270,280,290,300,310,320,330,340,350,360,370,380,390,400,410,420,430,440,450,460,
+470,480,490,500,510,520,530,540,550,560,570,580,590,600};
+
+int outdata [] = {
+  11,21,31,41,51,61,71,81,91,111,111,121,131,141,151,161,171,181,191,211,211,221,231,241,
+  251,261,271,281,291,311,311,321,331,341,351,361,371,381,391,411,411,421,431,441,451,461,
+  471,481,491,511,511,521,531,541,551,561,571,581,591,611};
+
+int index;
+int x=150;
+boolean z;
+unsigned long start = 0;
+unsigned long longest = 0;
+
+void setup ()
+{
+  Serial.begin (115200);
+      unsigned long start = micros ();
+
+  for ( index=1 ; z == false ; index++ ){
+    z = std::binary_search(array, &array[index], x);
+  }
+  index = index -2;
+  unsigned long finish = micros ();
+  Serial.print("Search Value :");
+  Serial.println(x);
+  Serial.print("Index Value :");
+  Serial.println(index);
+  Serial.print("Array Value Found :");
+  Serial.println(outdata[index]);
+  longest = max (longest, finish - start);
+  Serial.print ("Time taken = ");
+  Serial.print (longest);
+  Serial.println (" uS");
+}
+void loop () {}
