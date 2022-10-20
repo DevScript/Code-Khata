@@ -1,0 +1,24 @@
+class time:
+    def __init__(self, hours, minutes, seconds):
+        self.hours=hours 
+        self.minutes=minutes
+        self.seconds=seconds 
+        
+    def __sub__(self, al):
+        tempo1=self.minutes+a1.minutes 
+        tempo2=self hours+a1.hours 
+        if(self.seconds+a1.seconds) >=60:
+            tempo1=tempo1+1
+            tem1=(self.seconds+a1. seconds)-60
+        if(self.minutes+a1.minutes) >=60:
+            tempo2=tempo2+1 
+            tem2=(self.minutes+a1.minutes)-60 
+            b=(tempo2, tem2, tem1)
+        return b 
+        else:
+            tem2=(self.minutes+a1.minutes) 
+            tem1=(self.seconds+a1. seconds)
+            
+ob1=time (5,31,31) 
+ob2=time(5,40,40) 
+print(ob1-ob2)
