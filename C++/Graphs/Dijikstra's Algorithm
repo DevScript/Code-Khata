@@ -1,0 +1,129 @@
+#include<bits/stdc++.h>
+using namespace std;
+struct node
+{ int info;
+  struct node *next;
+};
+int w[100][100],n;
+struct node *adj[20];
+struct node *getnode(int x)
+{ 
+  struct node *p;
+  p=(struct node *)malloc(sizeof(struct node));
+  p->info=x;
+  p->next=NULL;
+  return p;
+}
+void readgraph()
+{ 
+  struct node *p,*last;
+  int choice,i,j;
+  for(i=1;i<=n;i++)
+ { 
+   last=NULL;
+  for(j=1;j<=n;j++)
+ { 
+   if(w[i][j]!=0)
+ {  p=getnode(j);
+  if(last==NULL)
+ { 
+   adj[i]=p;
+   last=adj[i];
+ }
+ else
+{
+ last->next=p;
+ last=p;
+}
+}
+}
+}
+}
+ void printgraph()
+{ 
+  int i;
+  struct node *p;
+cout<<"Adjacency list is"<<endl;
+cout<<endl;
+for(i=0;i<=n;i++)
+{  
+  cout<<i<<"->";
+  p=adj[i];
+  while(p!=NULL)
+{ 
+  cout<<p->info<<",";
+  p=p->next;
+}
+cout<<endl;
+}
+}
+void printDijkstra(int pi[20])
+{ cout<<"Edge\n";
+  for(int i=2;i<=n;i++)
+    cout<<pi[i]<<"->"<<i<<endl;
+}
+int minkey(int key[20],bool mstset[20])
+{ 
+  int min=INT_MAX,minindex;
+  for (int v=1;v<=n;v++)
+{
+   if (mstset[v]==false && key[v]<min)
+          { min = key[v];
+            minindex = v;
+           }
+}
+return minindex;
+}
+void SSSPDijkstra()
+{ 
+ int pi[20],key[20],u;
+ bool mstset[20];
+for(int i=1;i<=n;i++)
+{ 
+    key[i]=INT_MAX;
+    pi[i]=-1;
+    mstset[i]=false;
+}
+key[1]=0;
+pi[1]=-1;
+ for(int j=1;j<n;j++)
+{ 
+  u=minkey(key,mstset);
+  mstset[u]=true;
+  for(int i=1;i<=n;i++)
+{ 
+   if((w[u][i]) && (mstset[i]==false) && ((key[u]+w[u][i])<(key[i])))
+    {
+     pi[i]=u;
+     key[i]=w[u][i]+key[u];
+    }
+}
+}
+  printDijkstra(pi);
+}
+int main()
+{
+int i,j;
+printf("Enter no. of nodes in graph=");
+cin>>n;
+for(i=0;i<=n;i++)
+    adj[i]=NULL;
+cout<<"Enter weight matrix=";
+for(i=1;i<=n;i++)
+{ 
+ for(j=1;j<=n;j++)
+ cin>>w[i][j];
+}
+printf("\nWeight matrix is=\n");
+for(i=1;i<=n;i++)
+{ 
+for(j=1;j<=n;j++)
+  cout<<w[i][j]<<"\t";
+  cout<<endl;
+}
+readgraph();
+printgraph();
+SSSPDijkstra();
+}
+
+
