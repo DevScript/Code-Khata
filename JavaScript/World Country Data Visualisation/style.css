@@ -1,0 +1,65 @@
+body {
+  font-family: "Montserrat";
+}
+header {
+  background-color: beige;
+  text-align: center;
+  padding: 1px 0px;
+}
+h1 {
+  font-family: "Montserrat";
+  color: greenyellow;
+  margin-bottom: 2px;
+}
+.subtitle {
+  padding: 0px;
+  margin: 0px;
+}
+
+main {
+  text-align: center;
+  -webkit-box-shadow: 0 0 2px grey inset;
+  box-shadow: 0 0 2px grey inset;
+  background-color: beige;
+}
+
+.graph-buttons {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-shadow: 0 0 2px grey inset;
+  box-shadow: 0 0 2px grey inset;
+  background-color: white;
+}
+
+button {
+  padding: 8px 20px;
+  margin: 10px;
+  background-color: greenyellow;
+  border: none;
+}
+
+.graph-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text{
+  margin: 0px 80px;
+}
+p{
+  margin: 12px 0px;
+}
+.name {
+  text-align: initial;
+  /* margin: 2px 0px; */
+}
+
+.bar {
+  background-color: #F2A93B;
+  width: 500px;
+  height:30px;
+  margin: 2px 0px;
+}

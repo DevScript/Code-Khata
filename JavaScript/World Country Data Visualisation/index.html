@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>World Countries Data</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+	<link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+	<header id="countries">
+		<h1>World Countries Data</h1>
+		<p class="subtitle">Currently We have 250 countries</p>
+		<p class="feedback"></p>
+	</header>
+	<main>
+
+		<div class="wrapper">
+			<div class="graph-buttons">
+				<button class="population-btn">POPULATION</button>
+				<!-- <button class="languages-btn">LANGUAGES</button> -->
+			</div>
+			<h5 class="graph-title">
+				10 Most populated Countries in the world
+			</h5>
+			<div class="graphs">
+				<div class="graph-cell">
+					<div class="text name"></div>
+					<div class="graph-bar"></div>
+					<div class="text population"></div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<script src="./data/countries_data.js"></script>
+	<script src="./js/main.js"></script>
+
+</body>
+
+</html>
