@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+  }
+
+  html,body{
+    color: aliceblue;
+    display: grid;
+    height: 100%;
+    place-items: center;
+    background: #0d0d0d;
+  }
+  h1{
+    font-size: 60px;
+  }
+input{
+  height: 40px;
+  font-size: small;
+}
+
+button{
+    position: relative;
+    height: 50px;
+    width: 220px;
+    margin: 0 40px;
+    font-size: 23px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    outline: none;
+    cursor: pointer;
+    background: #312f2f;
+    overflow: hidden;
+    transition: 0.8s;
+    color: #ffffff;
+  }
+  button:first-child{
+    color: #206592;
+    border-color: #206592;
+  }
+  button:last-child{
+    color: #ce5c0c;
+    border-color: #ce5c0c;
+  }
+  button:before, button:after{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 100%;
+    filter: blur(30px);
+    opacity: 0.4;
+    transition: 0.6s;
+  }
+  button:before{
+    width: 60px;
+    background: rgb(245, 243, 243);
+    transform: translateX(-130px) skewX(-45deg);
+  }
+  button:after{
+    width: 30px;
+    background: rgb(255, 253, 253);
+    transform: translateX(-130px) skewX(-45deg);
+  }
+  button:hover:before,
+  button:hover:after{
+    opacity: 0.6;
+    transform: translateX(320px) skewX(-45deg);
+  }
+  button:hover{
+    color: #dd732c;
+  }
+  button:hover:first-child{
+    background: #206592;
+  }
+  button:hover:last-child{
+    background: #000000;
+  }
