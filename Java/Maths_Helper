@@ -1,0 +1,192 @@
+
+import java.util.Random;
+import java.util.Scanner;
+class MathsHelper
+
+
+{
+    private int numOfQuestions;
+    private int displayYear;
+    private int level;
+    private Scanner scanner;
+    public MathsHelper()
+    {
+        scanner = new Scanner(System.in);
+    }
+
+
+    public void mathsolver()
+    {
+        numOfQuestions=numOfQuestions*10;
+        System.out.println("\n\nNo of Questions : "+numOfQuestions+" Difficulty Level : "+level);
+        Random random=new Random();
+        float percentage;
+        int ans=0;
+        int count=1;
+        while(numOfQuestions >0)
+        {
+            int choice=1;
+
+            if(level==1)
+                choice=1;
+            if(level==2)
+            {
+                int a =1; //1 inclusive
+                int b= 3; //3 exclusive
+                choice = random.nextInt(b-a) + a;
+            }
+            if(level==3)
+            {
+                int a =1; //1 inclusive
+                int b= 4; //3 exclusive
+                choice = random.nextInt(b-a) + a;
+
+            }
+
+            int x=random.nextInt(100);
+            int y=random.nextInt(100);
+
+            if(choice==1)
+            {
+                System.out.println("\n\nQuestion : "+count+" --> "+x+" + "+y+" = ? ");int n=scanner.nextInt();
+
+                if(x+y == n)
+                {
+                    System.out.println("\n\nCorrect Answer !!!");
+                    ans++;
+                }
+                else
+                {
+                    System.out.println("\n\nInCorrect Answer !!!");
+                }
+            }
+            if(choice==2)
+            {
+                System.out.println("\n\nQuestion : "+count+" --> "+x+" - "+y+" = ? ");int n=scanner.nextInt();
+                if(x-y == n)
+                {
+                    System.out.println("\n\nCorrect Answer !!!");
+                    ans++;
+                }
+                else
+                {
+                    System.out.println("\n\nInCorrect Answer !!!");
+                }
+            }
+            if(choice==3)
+            {
+                System.out.println("\n\nQuestion : "+count+" --> "+x+" * "+y+" = ? ");int n=scanner.nextInt();
+                if(x*y == n)
+                {
+                    System.out.println("\n\nCorrect Answer !!!");
+                    ans++;
+                }
+                else
+                {
+                    System.out.println("\n\nInCorrect Answer !!!");
+                }
+            }
+
+            percentage = ans/count * 100;
+            System.out.println("Your current percentage is  "+percentage+"% ");
+            numOfQuestions++;
+            count++;
+        }
+
+        System.out.println("\n\n Scores : "+ans);
+
+    }
+
+    public void begin()
+    {
+        displayWelcome();
+        displayYearMenu();
+        promptForQuestions();
+        promptForLevel();
+        System.out.println("Let's begin!");
+
+        mathsolver();
+
+    }
+
+    private void displayWelcome()
+    {
+        System.out.println("+------------------------------------------------------------------------+\n");
+        System.out.println("|                      Welcome to the Math Helper.                       |\n");
+        System.out.println("|       Use this application to test your knowledge of mathematics.      |\n");
+        System.out.println("|      This program is intended for children from reception to year 7    |\n");
+        System.out.println("+------------------------------------------------------------------------+\n");
+    }
+    private void displayYearMenu() {
+        System.out.println("What is your year level? Choose an option from the list below:\n");
+        System.out.println(" +: addition, -: subtraction, *: multiplication, /: division, %: division with remainder\n");
+        System.out.println("[0] Reception [+]\n");
+        System.out.println("[1] Year 1 [+, -]\n");
+        System.out.println("[2] Year 2 [+, -]\n");
+        System.out.println("[3] Year 3 [+, -, *, /]\n");
+        System.out.println("[4] Year 4 [+, -, *, /]\n");
+        System.out.println("[5] Year 5 [+, -, *, /, negative numbers]\n");
+        System.out.println("[6] Year 6 [+, -, *, /, negative numbers]\n");
+        System.out.println("[7] Year 7 [+, -, *, /, %, negative numbers]\n");
+
+        do
+        {
+            System.out.println("\nEnter your choice : ");
+
+            displayYear=scanner.nextInt();
+
+            if(displayYear<0 || displayYear >7)
+                System.out.println("\n\nInvalid Choice !!! ");
+        }while(numOfQuestions<0 || numOfQuestions >7);
+    }
+
+    private void promptForQuestions()
+    {
+        System.out.println("How many questions would you like? Choose an option from the list below:");
+        System.out.println("[1] 10 questions");
+        System.out.println("[2] 20 questions");
+        System.out.println("[3] 30 questions");
+        System.out.println("[4] 40 questions");
+        System.out.println("[5] 50 questions");
+
+        do
+        {
+            System.out.println("\nEnter your choice : ");
+
+            numOfQuestions=scanner.nextInt();
+
+            if(numOfQuestions<1 || numOfQuestions >5)
+                System.out.println("\n\nInvalid Choice !!! ");
+        }while(numOfQuestions<1 || numOfQuestions >5);
+
+
+    }
+    private void promptForLevel()
+    {
+        System.out.println("[1] Level 1: addition");
+        System.out.println("[2] Level 2: addition and subtraction");
+        System.out.println("[3] Level 3: addition, subtraction, and multiplication");
+
+        do
+        {
+            System.out.println("\nChoose a difficulty level for the questions: ");
+            level=scanner.nextInt();
+            if(level<1 || level>3)
+                System.out.println("\n\nInvalid Choice !!! ");
+
+
+        }while(level<1 || level > 3);
+
+    }
+    public class MathsHelperDriver{
+    public static void main(String[] args)
+    {
+        MathsHelper helper = new MathsHelper();
+        helper.begin();
+    }
+}
+
+
+
+}
+
