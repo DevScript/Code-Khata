@@ -1,0 +1,145 @@
+import { useState } from 'react'
+import './index.css'
+
+const data = [
+  {
+    employeeId: '01',
+    name: 'John Doe',
+    email: 'johndoe@email.com',
+    position: 'Frontend Developer',
+  },
+  {
+    employeeId: '02',
+    name: 'Sara',
+    email: 'sara@email.com',
+    position: 'HR Executive',
+  },
+  {
+    employeeId: '03',
+    name: 'Mike',
+    email: 'mike@email.com',
+    position: 'Backend Developer',
+  },
+]
+
+const EditableTable = () => {
+  const [employeeData, setEmployeeData] = useState(data)
+
+  const onChangeInput = (e, employeeId) => {
+    const { name, value } = e.target
+
+    const editData = employeeData.map((item) =>
+      item.employeeId === employeeId && name ? { ...item, [name]: value } : item
+    )
+
+    setEmployeeData(editData)
+  }
+
+  return (
+    <div className="container">
+      <h1 className="title">ReactJS Editable Table</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Position</th>
+          </tr>
+        </thead>
+        <tbody>
+          {employeeData.map(({ employeeId, name, email, position }) => (
+            <tr key={employeeId}>
+              <td>
+                <input
+                  name="name"
+                  value={name}
+                  type="text"
+                  onChange={(e) => onChangeInput(e, employeeId)}
+                  placeholder="Type Name"
+                />
+              </td>
+              <td>
+                <input
+                  name="email"
+                  value={email}
+                  type="text"
+                  onChange={(e) => onChangeInput(e, employeeId)}
+                  placeholder="Type Email"
+                />
+              </td>
+              <td>
+                <input
+                  name="position"
+                  type="text"
+                  value={position}
+                  onChange={(e) => onChangeInput(e, employeeId)}
+                  placeholder="Type Position"
+                />
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  )
+}
+
+export default EditableTable
+CSS
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+body {
+  box-sizing: border-box;
+  color: #220f5f;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  padding: 0 10px;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+
+.title {
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 30px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+tr th {
+  font-size: 18px;
+  padding: 12px;
+  border: 1px solid #eeeeee;
+  text-align: left;
+  background-color: rgba(217, 221, 146, 0.2);
+}
+
+tr td {
+  border: 1px solid #eeeeee;
+  text-align: left;
+}
+
+input {
+  font-size: 16px;
+  background-color: transparent;
+  border: none;
+  width: 91%;
+  padding: 12px 12px;
+  font-family: 'Poppins', sans-serif;
+}
+
+input:hover {
+  background-color: #fffaf3;
+}
+
+input:focus {
+  outline: 1px solid #ccc;
+  border: 1px solid #ccc;
+}
