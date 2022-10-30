@@ -1,0 +1,67 @@
+import './blogs-module.css'
+
+const blogs = [
+  {
+    id: '01',
+    title: 'How to learn Javascript',
+    cover:
+      'https://images.unsplash.com/photo-1648737966769-98fa88fe66bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80',
+  },
+  {
+    id: '02',
+    title: 'ReactJS beginners guide',
+    cover:
+      'https://images.unsplash.com/photo-6f2b6890edc5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
+  },
+  {
+    id: '03',
+    title: 'HTML semantic tags',
+    cover:
+      'https://images.unsplash.com/photo-1655838774838-4a1322530d52?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzNHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=60',
+  },
+  {
+    id: '04',
+    title: 'Customize Radio Button',
+  },
+]
+
+function Blogs() {
+  return (
+    <div className="container blogs-page">
+      <h2 className="page-title">Popular Blogs</h2>
+      <div className="blog-section">
+        {blogs.map(({ id, title, cover }) => (
+          <div className="blogs" key={id}>
+            <img src={cover} alt="cover image" />
+            <h3>{title}</h3>
+          </div>
+        ))}
+      </div>
+    </div>
+  )
+}
+
+export default Blogs
+To resolve this issue, first, define a variable placeholderImage.
+
+We have fixed it by just adding a ternary operator in the image. We said if cover is there use cover otherwise placeholderImage.
+function Blogs() {
+  const placeholderImage =
+    'https://images.unsplash.com/photo-1597484661973-ee6cd0b6482c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80'
+
+  return (
+    <div className="container blogs-page">
+      <h2 className="page-title">Popular Blogs</h2>
+      <div className="blog-section">
+        {blogs.map(({ id, title, cover }) => (
+          <div className="blogs" key={id}>
+            <img src={cover ? cover : placeholderImage} alt="cover image" />
+            <h3>{title}</h3>
+          </div>
+        ))}
+      </div>
+    </div>
+  )
+}
+
+export default Blogs
