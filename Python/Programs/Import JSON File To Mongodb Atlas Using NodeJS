@@ -1,0 +1,91 @@
+npm init
+npm i express mongoose dotenv cors
+let’s quickly create the basic express server app with the following code.
+
+const express = require('express')
+
+const app = express()
+
+app.get('/', (req, res) => {
+  res.send({
+    title: 'hello world',
+  })
+})
+
+const port = process.env.PORT || 5000
+
+app.listen(port, () => console.log(`listening to port ${port}`))
+
+npm install --global nodemon
+
+create the JSON file that we’ll upload to the MongoDB database
+[
+  {
+    name: 'John Doe',
+    position: 'Frontend Developer',
+    experience: '2 years',
+  },
+  {
+    name: 'Sara',
+    position: 'UI/UX Designer',
+    experience: '1.5 years',
+  },
+  {
+    name: 'Mike',
+    position: 'Backend Engineer',
+    experience: '4 years',
+  },
+]
+
+const mongoose = require('mongoose')
+const Schema = mongoose.Schema
+
+const FreelancersSchema = new Schema({
+  name: {
+    type: String,
+    required: [true, 'Freelancer must have name'],
+    trim: true,
+    unique: true,
+  },
+  position: {
+    type: String,
+    required: [true, 'Freelancer must have position'],
+    trim: true,
+  },
+  experience: {
+    type: String,
+    required: [true, 'Experience is required'],
+    trim: true,
+  },
+})
+
+const Freelancers = mongoose.model('Freelancer', FreelancersSchema)
+
+module.exports = Freelancers
+You’ll have to use this code to setup the connection to the MongoDB database:
+
+const express = require('express')
+const cors = require('cors')
+const mongoose = require('mongoose')
+const dotenv = require('dotenv')
+
+dotenv.config({ path: './config.env' })
+
+const mongoURI = process.env.MONGODB_URL
+
+const app = express()
+
+app.use(express.json())
+app.use(cors())
+
+mongoose.connect(mongoURI).then(() => console.log('db connected'))
+
+app.get('/', (req, res) => {
+  res.send({
+    title: 'hello world',
+  })
+})
+
+const PORT = process.env.PORT || 5000
+
+app.listen(PORT, () => console.log(`listening to port ${PORT}`))
