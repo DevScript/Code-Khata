@@ -1,0 +1,60 @@
+
+<html lang="en">
+    <head>
+    <meta charset="UFT-8">
+    <title>Contact Form</title>
+    <style>
+    *{
+    box-sizing:border-box;
+    }
+    body{
+    background-color:rgb(36, 187, 187);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin:10px 30px;
+    padding:8px;
+    }
+    h1{
+    color:rgb(67,90,124);
+    text-align: center;
+    }
+    input[type="text"],input[type="email"],input[type="number"],textarea{
+    width:100%;
+    margin:10px;
+    padding:12px;
+    border: 2px solid lightgreen;
+    border-radius: 20px;
+    }
+    .container{
+    background-color:skyblue;
+    border:2px solid black;
+    border-radius:8px;
+    padding: 5px 30px 20px 10px;
+    }
+    input[type="submit"]{
+    background-color: lightgreen;
+    font-size:25px;
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:20px;
+    cursor:pointer;
+    }
+    input[type="submit"]:hover{
+    background-color:red;
+    }
+    </style>
+    </head>
+    <body>
+    <h1>Contact Form</h1>
+    <hr>
+    <form class="container">
+    <h2>Basic Information</h2>
+    <p>Name: <input type="text" placeholder="Enter Name"></p>
+    <p>Organization: <input type="text" placeholder="workplace"></p>
+    <p>Email: <input type="email" placeholder="hhthyatgt@gamil.com"></p>
+    <p>Contact no: <input type="number" placeholder="111-222-333"></p>
+    <p>Address: <textarea rows="10 cols="60" placeholder="Enter the address"></textarea></p>
+    <h2>Purpose Of Contact: <textarea rows="10" cols="50" placeholder="Enter the cause"></textarea></h2>
+    <input type="submit" value="Send">
+    </body>
+    </html>
