@@ -1,6 +1,10 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// Time complexity: O(N) -> Linear time
+// Space complexity: O(1) -> Constant space
+
+// if no profit can be made, RETURN 0
 int maxProfit(vector<int> &prices) {
     int n = prices.size();
 
@@ -8,10 +12,10 @@ int maxProfit(vector<int> &prices) {
     int min_price = prices[0];
 
     for (int i = 0; i < n; ++i) {
-        min_price = min(min_price, prices[i]);
+        min_price = min(min_price, prices[i]); // to buy the stock on this day
 
         int curr_profit = prices[i] - min_price;
-        max_profit = max(max_profit, curr_profit);
+        max_profit = max(max_profit, curr_profit); // to sell the stock on this day
     }
 
     // no profit made
