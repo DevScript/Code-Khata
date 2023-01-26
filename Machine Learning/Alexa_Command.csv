@@ -1,0 +1,664 @@
+Number,Category,Action_needed,Question,Subcategory,Action,Time,Sentence
+1,lights,1,0,kitchen,on,today,Illuminate the kitchen today.
+2,lights,1,0,kitchen,on,tomorrow,Illuminate the kitchen tomorrow.
+3,lights,1,0,kitchen,on,hour,Turn on the light in the kitchen in 10 hours.
+4,lights,1,0,kitchen,on,day,Turn on the light in the kitchen in 1 day.
+5,lights,1,0,diningroom,on,today,Illuminate the dining room today.
+6,lights,0,0,diningroom,on,today,Don't illuminate the dining room today.
+7,lights,1,0,diningroom,on,tomorrow,Illuminate the dining room tomorrow.
+8,lights,1,0,diningroom,on,hour,Turn on the light in the dinin room in 10 hours.
+9,lights,1,0,diningroom,on,day,Turn on the light in the dining room in 1 day.
+10,lights,1,0,bathroom,on,now,Turn on the light in the bathroom.
+11,lights,0,0,none,none,now,Don't turn on the light right now.
+12,lights,0,0,none,none,now,I would get mad if you'd put on the light right now.
+13,lights,1,0,none,on,now,I would not like it if you wouldn't turn on the light right now.
+14,lights,1,1,livingroom,on,now,Is the light on in the living room.
+15,lights,1,0,livingroom,on,hour,Would you illuminate the living room in one hour for me please.
+16,lights,1,0,none,on,now,It would be great if you'd turn on the light for me.
+17,lights,1,0,kitchen,on,now,Light on in kitchen.
+18,lights,1,0,livingroom,off,hour,Light off in living room in a few hours.
+19,lights,1,0,basement,off,now,Turn the light off in the basement.
+20,lights,1,0,diningroom,off,now,Turn the light off in the dining room.
+21,lights,1,0,none,on,now,I would like if you made it brighter.
+22,lights,1,0,none,on,minute,I would like if you made it brighter in 3 minutes.
+23,lights,1,1,none,on,minute,Can you make it brighter here in 8 minutes?
+24,lights,1,1,none,off,now,Can you make it more dark here?
+25,lights,0,0,none,none,now,Don't make it more dark here.
+26,lights,0,0,diningroom,none,now,I would get mad if you would turn on the light in the dining room right now.
+27,lights,1,1,bathroom,on,now,Is the light on in the bathroom?
+28,lights,1,1,bathroom,on,now,Is the light on in the bathroom.
+29,lights,1,1,bathroom,on,now,Has the light been on long in the bathroom?
+30,lights,1,1,bathroom,off,now,Has the light been off long in the kitchen?
+31,lights,1,1,bathroom,on,now,Is the light in the bathroom on?
+32,lights,1,1,none,on,now,Did you turn on the light already?
+33,lights,1,1,none,on,now,Can you please turn on the light?
+34,lights,1,0,none,on,now,Help me to turn on the light.
+35,lights,1,1,none,on,minute,Can you please turn on the light in a minute?
+36,lights,1,0,none,on,minute,Help me to turn on the light in a minute.
+37,lights,1,0,none,on,now,It is so dark here.
+38,lights,1,0,none,on,now,I can't see anything.
+39,lights,1,0,none,on,now,Lighten the room.
+40,lights,1,1,none,on,minute,Can you please turn on the light in a few minutes?
+41,lights,1,0,none,on,minute,Help me to turn on the light in a few minutes.
+42,lights,1,0,none,on,minute,Lighten the room in a few minutes.
+43,lights,1,0,none,on,minute,Lighten the room in 5 minutes.
+44,lights,1,0,kitchen,off,minute,Turn the light off in the kitchen in 10 minutes.
+45,lights,0,0,kitchen,none,minute,Don't turn the light off in the kitchen in 10 minutes.
+46,lights,1,0,attic,on,now,Make it less dark in the attic now.
+47,lights,1,0,attic,on,now,Turn on the light in the attic.
+48,lights,1,0,attic,on,now,Illuminate the attic.
+49,lights,1,0,none,off,hour,Turn off the lights in one hour.
+50,lights,1,0,none,on,now,Turn on the light.
+51,lights,1,0,all,on,now,Flicker the lights for me.
+52,lights,1,0,none,on,now,Turn on the refrigerator.
+53,lights,1,0,none,on,now,Turn on the oven.
+54,lights,1,0,none,on,now,Turn on the music system.
+55,lights,1,0,attic,off,now,Turn off the light in the attic.
+56,lights,1,0,basement,off,now,Turn off the light in the basement.
+57,lights,1,0,kitchen,off,now,Turn off the light in the kitchen.
+58,lights,1,0,library,off,now,Turn off the light in the library.
+59,lights,1,0,kitchen,off,now,Turn off the light in the kitchen.
+60,lights,1,0,diningroom,off,now,Turn off the light in the dining room.
+61,lights,1,0,cellar,off,now,Turn off the light in the cellar.
+62,lights,1,0,attic,off,now,Turn off the lights in the attic.
+63,lights,1,0,basement,off,now,Turn off the lights in the basement.
+64,lights,1,0,kitchen,off,now,Turn off the lights in the kitchen.
+65,lights,1,0,library,off,now,Turn off the lights in the library.
+66,lights,1,0,kitchen,off,now,Turn off the lights in the kitchen.
+67,lights,1,0,diningroom,off,now,Turn off the lights in the dining room.
+68,lights,1,0,cellar,off,now,Turn off the lights in the cellar.
+69,lights,1,0,random,off,minute,Turn off something in 45 minutes.
+70,lights,1,0,random,on,now,Turn on something.
+71,lights,1,0,random,on,day,Put on a random appliance in 7 days.
+72,lights,1,0,none,none,now,lights.
+73,lights,1,1,bathroom,on,tomorrow,Can you make it less dark in the bathroom tomorrow?
+74,lights,1,1,toilet,on,tomorrow,Can you make it less dark in the toilet tomorrow?
+75,lights,1,0,attic,on,hour,Turn on the light in the attic in one hour.
+76,lights,1,1,cellar,off,now,Can you turn off the lights in the cellar?
+77,lights,1,0,none,none,now,I would get mad if you turn on the lights right now.
+78,lights,1,0,cellar,on,now,It is dark in the cellar.
+79,lights,1,0,bathroom,on,now,It is dark in the bathroom.
+80,lights,1,0,livingroom,on,now,It is dark in the living room.
+81,lights,1,0,library,on,now,It is dark in the library.
+82,lights,1,0,toilet,on,now,It is dark in the toilet.
+83,lights,1,0,attic,on,now,It is dark in the attic.
+84,lights,1,0,basement,on,now,It is dark in the basement.
+85,lights,1,1,diningroom,on,minute,Can you make it less dark in the dining room in 5 minutes?
+86,lights,1,1,cellar,on,minute,Can you make it less dark in the cellar in 85 minutes?
+87,lights,1,1,attic,on,minute,Can you make it less dark in the attic in 5 minutes?
+88,lights,1,1,kitchen,on,minute,Can you make it less dark in the kitchen in 45 minutes?
+89,lights,1,1,toilet,on,minute,Can you make it less dark in the toilet in 15 minutes?
+90,lights,1,1,library,on,minute,Can you make it less dark in the library in 50 minutes?
+91,lights,1,1,basement,on,minute,Can you make it less dark in the basement in 5 minutes?
+92,lights,1,1,diningroom,on,hour,Can you make it more bright in the dining room in 15 hours?
+93,lights,1,1,cellar,on,hour,Can you make it more bright in the cellar in 50 hours?
+94,lights,1,1,attic,on,hour,Can you make it more bright in the attic in an hour?
+95,lights,1,1,kitchen,on,day,Can you make it more bright in the kitchen in 5 days?
+96,lights,1,1,toilet,on,week,Can you make it more bright in the toilet in 5 weeks?
+97,lights,1,1,library,on,minute,Can you make it more bright in the library in 2 minutes?
+98,lights,1,1,basement,on,minute,Can you make it more bright in the basement in 5 minutes?
+99,lights,1,1,diningroom,off,hour,Can you make it less bright in the dining room in 15 hours?
+100,lights,1,1,cellar,off,hour,Can you make it less bright in the cellar in 50 hours?
+101,lights,1,1,attic,off,hour,Can you make it less bright in the attic in an hour?
+102,lights,1,1,kitchen,off,day,Can you make it less bright in the kitchen in 5 days?
+103,lights,1,1,toilet,off,week,Can you make it less bright in the toilet in 5 weeks?
+104,lights,1,1,library,off,minute,Can you make it less bright in the library in 2 minutes?
+105,lights,1,1,basement,off,minute,Can you make it less bright in the basement in 5 minutes?
+106,lights,0,0,none,none,now,Don't turn off the lights.
+107,lights,1,0,none,on,none,Turn on the lights when I get home.
+108,lights,1,0,none,on,none,Turn on the lights when it's dark outside.
+109,lights,1,0,none,off,none,Turn off the lights when it is light outside.
+110,camera,1,1,none,none,month,Was there any motion between september and october?
+111,camera,1,1,bathroom,on,yesterday,Was the camera in the bathroom on yesterday?
+112,camera,1,1,toilet,on,yesterday,Was the camera in the toilet on yesterday?
+113,camera,1,1,all,none,now,Was there motion?
+114,camera,1,1,none,on,now,Is the recording device on?
+115,camera,1,1,none,none,now,Was there motion with the motion viewer?
+116,camera,1,1,outside,none,now,Would you tell me if there was any motion on the camera outside?
+117,camera,1,1,outside,none,now,Was there any motion on the camera outside?
+118,camera,1,1,kitchen,none,yesterday,Was there movement on the camera in the kitchen yesterday?
+119,camera,1,1,attic,none,yesterday,Was there movement on the camera in the attic yesterday?
+120,camera,1,1,bathroom,none,yesterday,Was there movement on the camera in the bathroom yesterday?
+121,camera,1,1,backyard,none,yesterday,Was there movement on the camera in the backyard yesterday?
+122,camera,1,1,livingroom,none,yesterday,Was there movement on the camera in the living room yesterday?
+123,camera,1,1,livingroom,on,now,I would like it that you'd tell me if the camera in the living room is on.
+124,camera,1,1,all,none,now,Where there strangers tonight at my house?
+125,camera,1,1,all,none,now,Did you see any movement tonight?
+126,camera,1,1,outside,none,now,Was there something strange outside?
+127,camera,1,1,all,none,now,Is there something I should know about the motion?
+128,camera,1,1,all,none,now,What do you see on the camera?
+129,camera,1,1,all,none,now,How many cameras are there?
+130,camera,1,1,all,none,now,Where are all the cameras installed?
+131,camera,1,1,all,none,now,Is there many motion on the cameras lately?
+132,camera,1,1,all,none,now,What is the camera currently shooting?
+133,camera,1,1,all,none,today,Did humans appear on the camera today?
+134,camera,1,1,all,none,month,Would you tell me if there was motion between september and october?
+135,camera,1,1,none,on,now,Is the camera on?
+136,camera,1,0,none,on,now,Turn on the camera.
+137,camera,1,0,none,none,now,A camera does recording and viewing.
+138,camera,1,1,backyard,none,now,Could you give me some info on the camera in the backyard?
+139,camera,1,1,none,none,today,Was there any movement on the cameras today?
+140,camera,1,1,outside,none,today,Was there a person outside today?
+141,camera,1,1,none,none,yesterday,Was there any movement on the cameras yesterday?
+142,camera,1,1,outside,none,yesterday,Was there a person outside yesterday?
+143,camera,1,0,none,none,now,camera.
+144,camera,1,1,outside,none,hour,Was there any motion in the past hour on the camera outside?
+145,camera,1,1,backyard,none,yesterday,Was there any motion in the backyard yesterday?
+146,camera,1,1,backyard,none,today,Was there unusual activity on the camera in the backyard today?
+147,openapp,0,0,none,none,now,Don't open up an app.
+148,openapp,0,0,none,none,now,I would not like it if you would open an app right now.
+149,openapp,1,1,none,open,now,Would you open the Home app for me please?
+150,openapp,1,0,none,open,now,Open the relay app for me now.
+151,openapp,1,0,none,open,now,Open camera app.
+152,openapp,1,0,none,open,now,Open relay app.
+153,openapp,1,1,none,open,day,Would you open the Home app in one day for me please?
+154,openapp,1,0,none,open,day,Open the relay app for me in a few days.
+155,openapp,1,0,none,open,yesterday,Open camera app yesterday.
+156,openapp,1,0,none,open,tomorrow,Open relay app tomorrow.
+157,openapp,1,0,none,open,now,I would like it if you'd open the camera app.
+158,openapp,1,1,none,open,now,Is it possible to open up the camera app?
+159,openapp,1,1,none,none,now,Can you show me the motion on the camera?
+160,openapp,1,1,none,none,minute,Can you show me the motion on the camera in 5 minutes?
+161,openapp,1,1,none,open,now,Is it possible to open up the relay app?
+162,openapp,1,1,none,open,minute,Is it possible to open up the relay app in a certain amount of minutes?
+163,openapp,1,1,none,open,now,Can you do me a favor and open up the locationtracker app?
+164,openapp,1,0,none,open,now,Open up a random app for me.
+165,openapp,1,0,none,open,hour,Open up a random app for me in two hours.
+166,openapp,1,0,none,open,now,Open the Facebook app for me.
+167,openapp,1,0,none,open,minute,Open any app you want in 8 minutes.
+168,openapp,1,0,none,open,minute,The relay app has to be shown to me in 5 minutes.
+169,openapp,0,0,none,none,now,Don't open up an app.
+170,openapp,1,0,none,open,now,Open any app you want now.
+171,openapp,1,0,none,open,minute,Open something in 5 minutes.
+172,openapp,1,0,none,open,now,Open up the app which will show me relay information.
+173,openapp,1,0,none,open,hour,Open up Google Maps in one hour.
+174,openapp,1,0,none,open,now,Open up Google Maps.
+175,openapp,1,0,none,none,now,Show me motion.
+176,openapp,1,0,none,open,now,open.
+177,openapp,1,1,none,open,minute,Can you open up the Maps app in 5 minutes for me please?
+178,direction,1,1,home,none,now,Can you give me directions to my home?
+179,direction,1,1,home,none,now,How far am I from home?
+180,direction,1,1,home,none,now,Can I get home from here?
+181,direction,1,1,place,none,now,Can you tell me the way to that place?
+182,direction,1,0,home,none,now,Get me home.
+183,direction,1,1,home,none,hour,How far am I from home in an hour?
+184,direction,1,1,home,none,hour,Can I get home from here in 2 hours?
+185,direction,1,1,place,none,hour,Can you tell me the way to that place in an hour?
+186,direction,1,0,home,none,tomorrow,Get me home tomorrow.
+187,direction,1,1,myplace,none,now,Where am I?
+188,direction,1,1,home,none,now,How long before I will be home?
+189,direction,1,1,place,none,now,Show me the bus between leuven and home?
+190,direction,1,1,place,none,now,Where is the nearest bus stop in Antwerpen?
+191,direction,1,1,place,none,now,Where is the nearest bus stop in Brussels?
+192,direction,1,1,place,none,now,Where is the nearest bus stop in Leuven?
+193,direction,1,1,place,none,now,Where is the nearest bus stop in Hasselt?
+194,direction,1,1,myplace,none,now,Where is the nearest bus stop?
+195,direction,1,1,home,none,now,How do I get home with the bus?
+196,direction,1,1,home,none,hour,How do I get home with the bus in an hour?
+197,direction,1,1,home,none,now,Where is my home?
+198,direction,1,1,place,none,now,When do the trains departure in Leuven?
+199,direction,1,1,myplace,none,now,When do the trains departure?
+200,direction,1,1,myplace,none,hour,When do the trains departure in an hour?
+201,direction,1,0,place,none,now,Show me the trains that departure now in Hasselt.
+202,direction,1,0,place,none,minute,Show me the trains that departure in Hasselt in ten minutes.
+203,direction,1,1,place,none,now,When do the busses departure in Leuven?
+204,direction,1,1,myplace,none,now,When do the busses departure?
+205,direction,1,1,myplace,none,hour,When do the busses departure in an hour?
+206,direction,1,0,place,none,now,Show me the busses that departure now in Hasselt.
+207,direction,1,0,place,none,minute,Show me the busses that departure in Hasselt in ten minutes.
+208,direction,1,1,myplace,none,now,Are there any delays with busses at my location?
+209,direction,1,1,home,none,now,Do I have to travel far when I want to go home?
+210,direction,1,1,home,none,minute,Do I have to travel far when I want to go home in a few minutes?
+211,direction,1,1,myplace,none,now,Should I use the public transport now?
+212,direction,1,1,home,none,minute,When will I be home when I leave now with my car in 5 minutes?
+213,direction,1,1,home,none,now,Can you show me how I will be getting home with my car?
+214,direction,1,1,place,none,now,How far is it to Antwerpen?
+215,direction,1,0,myplace,none,now,Find the closest train station.
+216,direction,1,0,myplace,none,now,Find the nearest bus stop.
+217,direction,1,0,myplace,none,minute,Find the nearest bus stop in 3 minutes.
+218,direction,1,1,home,none,now,Where do I live?
+219,direction,1,1,myplace,none,now,Where is the nearest train station?
+220,direction,1,1,myplace,none,now,Where is the closest train station?
+221,direction,1,1,place,none,now,Where is the nearest train station in Antwerpen?
+222,direction,1,1,place,none,now,Where is the nearest train station in Brussels?
+223,direction,1,1,place,none,now,Where is the nearest train station in Leuven?
+224,direction,1,1,place,none,now,Where is the nearest train station in Hasselt?
+225,direction,1,1,myplace,none,now,Where is the nearest train station?
+226,direction,1,1,home,none,now,How do I get home with the train?
+227,direction,1,1,myplace,none,now,When do the busses depart?
+228,direction,1,1,place,none,now,When do the busses depart in Antwerpen?
+229,direction,1,1,place,none,now,When do the busses depart in Brussels?
+230,direction,1,1,place,none,now,When do the busses depart in Leuven?
+231,direction,1,1,place,none,now,When do the busses depart in Hasselt?
+232,direction,1,1,myplace,none,now,Where is the nearest bus station?
+233,direction,1,1,myplace,none,now,Where is the closest bus stop?
+234,direction,1,0,myplace,none,now,Give me some directions.
+235,direction,1,0,myplace,none,now,direction.
+236,direction,1,1,home,none,hour,How do I get home in one hour?
+237,direction,1,1,place,none,now,How do I get home from Leuven?
+238,direction,1,1,myplace,none,now,When do the trains departure?
+239,direction,1,1,myplace,none,now,What is the closest train station from here?
+240,direction,1,1,place,none,now,How do I get to Leuven?
+241,direction,1,1,home,none,minute,How do I get home from Leuven in a minute?
+242,direction,1,1,myplace,none,now,When does the first train leave to Balen from Leuven?
+243,direction,1,1,place,none,now,How do I get from Leuven to Hasselt?
+244,information,1,1,none,none,now,What is the temperature in the room right now?
+245,information,1,1,none,none,now,What is the temperature in the room?
+246,information,1,1,none,none,now,What is temperature in the room?
+247,information,1,1,none,none,now,Is it hot in the room?
+248,information,1,1,none,none,minute,What is the temperature in the room in 3 minutes?
+249,information,1,1,none,none,minute,What is the humidity in the room in 3 minutes?
+250,information,1,1,none,none,minute,What is temperature in the room in 3 minutes?
+251,information,1,1,bathroom,none,now,What are the sensor readings from the bathroom?
+252,information,1,1,kitchen,none,now,Give me info from the kitchen.
+253,information,1,1,bathroom,none,now,Give me info from the bathroom.
+254,information,1,1,diningroom,none,tomorrow,Give me some readings of the dining room tomorrow.
+255,information,1,1,kitchen,none,tomorrow,Tomorrow give me info from the kitchen.
+256,information,1,1,bathroom,none,tomorrow,Tomorrow give me info from the bathroom.
+257,information,1,1,attic,none,tomorrow,Tomorrow give me info from the attic.
+258,information,1,1,bathroom,none,minute,I want info from the bathroom in 5 minutes.
+259,information,1,1,bathroom,none,minute,I want info from the bathroom in 8 minutes.
+260,information,1,1,bathroom,none,day,I want info from the bathroom in 2 days.
+261,information,1,1,attic,none,tomorrow,I want info from the attic tomorrow.
+262,information,1,1,kitchen,none,now,Enlighten me about the kitchen.
+263,information,1,1,bathroom,none,now,Is there motion in the bathroom right now?
+264,information,1,1,livingroom,none,now,Was there any activity in the living room?
+265,information,1,1,kitchen,none,now,Is the light on in the kitchen?
+266,information,1,1,none,none,week,What is the humidity in averaged over a week?
+267,information,1,1,basement,none,now,What does the temperature reading in the basement say?
+268,information,1,1,diningroom,none,now,What does the temperature reading in the dining room say?
+269,information,1,1,attic,none,now,Are there any sensors in the attic?
+270,information,0,0,none,none,now,Don't give me any information.
+271,information,1,0,all,none,minute,Give me information about all rooms in 10 minutes.
+272,information,1,1,all,none,now,Which sensors are currently in operation?
+273,information,1,1,all,none,now,Were there any sensor malfunctions lately?
+274,information,1,0,all,none,tomorrow,Show me the sensors tomorrow.
+275,information,0,0,all,none,tomorrow,Don't show me the sensors tomorrow.
+276,information,1,0,all,none,yesterday,Give me some information for yesterday.
+277,information,1,0,all,none,now,Give me some information about some sensors.
+278,information,1,0,all,none,now,Show me some sensor readings.
+279,information,1,0,all,none,minute,Show me some sensor readings in a few minutes.
+280,information,1,1,toilet,none,now,What are the sensor readings from the toilet?
+281,information,1,0,toilet,none,now,Give me info from the toilet.
+282,information,1,0,toilet,none,tomorrow,Tomorrow give me info from the toilet.
+283,information,1,0,toilet,none,minute,I want info from the toilet in 5 minutes.
+284,information,1,0,toilet,none,minute,I want info from the toilet in 8 minutes.
+285,information,1,0,toilet,none,day,I want info from the toilet in 2 days.
+286,information,1,1,toilet,none,now,Is there motion in the toilet right now?
+287,information,1,1,toilet,none,now,Can you give me some information about the toilet?
+288,information,1,0,all,none,now,information.
+289,information,1,1,library,none,now,What is the temperature in the library?
+290,information,1,1,library,none,now,What is the humidity in the library?
+291,information,1,0,library,none,hour,Update me in an hour what temperature it is in the library.
+292,information,0,0,library,none,now,Don't let me know what humidity it is in the library.
+293,information,1,1,library,none,now,What is the temperature in the library?
+294,information,1,1,bathroom,none,now,What is the temperature in the bathroom?
+295,information,1,1,bathroom,none,now,What is the humidity in the bathroom?
+296,information,1,0,bathroom,none,hour,Update me in an hour what temperature it is in the bathroom.
+297,information,0,0,bathroom,none,now,Don't let me know what humidity it is in the bathroom.
+298,information,1,1,bathroom,none,now,What is the temperature in the bathroom?
+299,information,1,1,diningroom,none,now,What is the temperature in the dining room?
+300,information,1,1,diningroom,none,now,What is the humidity in the dining room?
+301,information,1,0,diningroom,none,hour,Update me in an hour what temperature it is in the dining room.
+302,information,0,0,diningroom,none,now,Don't let me know what humidity it is in the dining room.
+303,information,1,1,diningroom,none,now,What is the temperature in the dining room?
+304,information,1,1,kitchen,none,now,What is the temperature in the kitchen?
+305,information,1,1,kitchen,none,now,What is the humidity in the kitchen?
+306,information,1,0,kitchen,none,hour,Update me in an hour what temperature it is in the kitchen.
+307,information,0,0,kitchen,none,now,Don't let me know what humidity it is in the kitchen.
+308,information,1,1,kitchen,none,now,What is the temperature in the kitchen?
+309,information,1,1,toilet,none,now,What is the temperature in the toilet?
+310,information,1,1,toilet,none,now,What is the humidity in the toilet?
+311,information,1,0,toilet,none,hour,Update me in an hour what temperature it is in the toilet.
+312,information,0,0,toilet,none,now,Don't let me know what humidity it is in the toilet.
+313,information,1,1,toilet,none,now,What is the temperature in the toilet?
+314,information,1,1,attic,none,now,What is the temperature in the attic?
+315,information,1,1,attic,none,now,What is the humidity in the attic?
+316,information,1,0,attic,none,hour,Update me in an hour what temperature it is in the attic.
+317,information,0,0,attic,none,now,Don't let me know what humidity it is in the attic.
+318,information,1,1,attic,none,now,What is the temperature in the attic?
+319,information,1,1,cellar,none,now,What is the temperature in the cellar?
+320,information,1,1,cellar,none,now,What is the humidity in the cellar?
+321,information,1,0,cellar,none,hour,Update me in an hour what temperature it is in the cellar.
+322,information,0,0,cellar,none,now,Don't let me know what humidity it is in the cellar.
+323,information,1,1,cellar,none,now,What is the temperature in the cellar?
+324,information,1,1,basement,none,now,What is the temperature in the basement?
+325,information,1,1,basement,none,now,What is the humidity in the basement?
+326,information,1,0,basement,none,hour,Update me in an hour what temperature it is in the basement.
+327,information,0,0,basement,none,now,Don't let me know what humidity it is in the basement.
+328,information,1,1,basement,none,now,What is the temperature in the basement?
+329,information,1,1,kitchen,none,now,Is it hot in the kitchen right now?
+330,information,1,1,library,none,now,Is it hot in the library?
+331,information,1,1,kitchen,none,now,Is it hot in the kitchen?
+332,information,1,1,diningroom,none,now,Is it hot in the dining room?
+333,information,1,1,cellar,none,now,Is it hot in the cellar?
+334,information,1,1,attic,none,now,Is it hot in the attic?
+335,information,1,1,basement,none,now,Is it hot in the basement?
+336,information,1,1,kitchen,none,now,Is it cold in the kitchen right now?
+337,information,1,1,library,none,now,Is it cold in the library?
+338,information,1,1,kitchen,none,now,Is it cold in the kitchen?
+339,information,1,1,diningroom,none,now,Is it cold in the dining room?
+340,information,1,1,cellar,none,now,Is it cold in the cellar?
+341,information,1,1,attic,none,now,Is it cold in the attic?
+342,information,1,1,basement,none,now,Is it cold in the basement?
+343,information,1,1,bathroom,none,now,Is it cold in the bathroom?
+344,information,1,1,bathroom,none,now,Is it hot in the bathroom?
+345,information,1,1,cellar,none,now,Can you give me some info about the cellar?
+346,information,0,0,cellar,none,now,Cellar.
+347,information,0,0,toilet,none,now,Toilet.
+348,information,0,0,bathroom,none,now,Bathroom.
+349,information,0,0,livingroom,none,now,Living room.
+350,information,0,0,library,none,now,Library.
+351,information,0,0,basement,none,now,Basement.
+352,information,0,0,attic,none,now,Attic.
+353,information,0,0,diningroom,none,now,Dining room.
+354,information,0,0,myplace,none,now,Myplace.
+355,information,1,1,attic,none,now,What temperature is it in the attic?
+356,other,1,1,none,none,none,Who are you?
+357,other,1,1,none,none,none,What is the tallest mountain on earth?
+358,other,1,1,none,none,none,In what movies did Adam Sandler play?
+359,other,1,1,none,none,none,What is a continent?
+360,other,1,1,none,none,none,Is weed considered a hard drug?
+361,other,1,1,none,none,none,Which players are in the premier league?
+362,other,1,1,none,none,none,When do you know when you are sick?
+363,other,1,1,none,none,none,What is the deepest trench on earth?
+364,other,1,1,none,none,none,Are we alone in this universe?
+365,other,1,1,none,none,none,How many animal species are there?
+366,other,1,1,none,none,none,How many religions are there?
+367,other,1,1,none,none,none,What is the tallest mountain?
+368,other,1,1,none,none,none,In what language are you written?
+369,other,1,1,none,none,none,Are you alive?
+370,other,1,1,none,none,none,Can you move over the internet?
+371,other,1,1,none,none,none,Are you mean?
+372,other,1,1,none,none,none,What do you think about Donald Trump?
+373,other,1,1,none,none,none,Are you republican or democrat?
+374,other,1,1,none,none,none,Do you own the camera?
+375,other,1,1,none,none,none,Can you see?
+376,other,1,1,none,none,none,How many oceans are there on earth?
+377,other,0,0,none,none,none,I don't like justin bieber.
+378,other,0,0,none,none,none,Dinosaurs don't exist anymore.
+379,other,1,1,none,none,none,Who is Justin Bieber.
+380,other,1,1,none,none,none,Do you control the cameras?
+381,other,1,1,none,none,none,How tall is the tallest human?
+382,other,0,0,none,none,none,other.
+383,other,0,0,none,none,none,I like potatoes.
+384,other,1,1,none,none,none,Do you own the light?
+385,other,1,1,none,none,none,Am I facing north?
+386,other,1,1,none,none,none,How many pixels does the camera have?
+387,other,0,0,none,none,none,If it is not a question it responds with ok.
+388,other,0,0,none,none,none,Ok.
+389,other,0,0,none,none,none,I like you.
+390,other,0,0,none,none,none,Don't say anything.
+391,other,0,0,none,none,none,Keep your mouth shut.
+392,other,0,0,none,none,none,Don't give me information.
+393,other,0,0,none,none,none,You're stupid.
+394,other,0,0,none,none,none,Do not do anything.
+395,other,0,0,none,none,none,Don't do anything.
+396,other,1,1,none,none,none,Where are you?
+397,other,1,1,none,none,none,Where do you live?
+398,other,1,1,none,none,none,Are you alive?
+399,other,1,1,none,none,none,In what language are you written?
+400,other,0,0,none,none,none,Random.
+401,other,0,0,none,none,none,Nothing.
+402,other,0,0,none,none,none,ok.
+403,other,0,0,none,none,none,I don't like drowning.
+404,other,0,0,none,none,none,Why not?
+405,other,0,0,none,none,none,What is the capital of Belgium?
+406,other,0,0,none,none,none,I am bored.
+407,other,0,0,none,none,none,What is the meaning of life?
+408,other,0,1,none,none,none,Do you know other special things?
+409,other,1,1,none,none,none,What do you feel right now?
+410,other,1,1,none,none,none,Do you have feelings?
+411,other,1,1,none,none,none,Can you be sad?
+412,other,1,1,none,none,none,Can you tell me what it is like to be happy?
+413,other,0,0,none,none,none,I am happy.
+414,other,1,1,none,none,none,Do you like animals?
+415,other,0,0,none,none,none,I like cats and dogs.
+416,weather,1,1,place,none,tomorrow,Is it going to be hot in Spain tomorrow?
+417,weather,1,1,place,none,now,What temperature is it in Brussels?
+418,weather,1,1,place,none,now,What temperature is it in Antwerpen?
+419,weather,1,1,place,none,now,What temperature is it in Crete?
+420,weather,1,1,place,none,now,What temperature is it in the islands of the malidives?
+421,weather,0,0,myplace,none,hour,I do not want to now which weather it is in an hour.
+422,weather,1,1,place,none,now,How is the weather like in Crete?
+423,weather,1,1,place,none,month,How is the weather like in Crete next month?
+424,weather,1,1,myplace,none,today,Will it rain later today?
+425,weather,1,1,myplace,none,minute,Will the sun shine in 10 minutes?
+426,weather,1,0,myplace,none,now,weather.
+427,weather,1,1,myplace,none,now,Am I going to get wet if I go outside now?
+428,weather,1,1,myplace,none,now,Will i get wet when i leave the house now.
+429,weather,1,1,myplace,none,minute,Am I going to get wet if I go outside in a few minutes?
+430,weather,1,1,myplace,none,minute,Will i get wet when i leave the house in 3 minutes?
+431,weather,1,0,myplace,none,now,Sun.
+432,weather,1,1,myplace,none,minute,Will there be fog in 7 minutes.
+433,weather,1,1,myplace,none,today,Will there be fog today.
+434,weather,1,1,place,none,tomorrow,How is the weather going to be in Mallorca tomorrow?
+435,weather,1,1,place,none,now,Will the sun shine in Antwerp?
+436,weather,1,1,place,none,hour,Will the sun shine in Antwerp in 5 hours?
+437,weather,1,0,myplace,none,now,Rain.
+438,weather,1,0,myplace,none,now,It will rain.
+439,weather,1,1,myplace,none,now,Is it storming outside?
+440,weather,1,1,myplace,none,tomorrow,Will it be storming tomorrow?
+441,weather,1,0,myplace,none,minute,It is storming in 10 minutes.
+442,weather,1,1,myplace,none,yesterday,Was it storming yesterday?
+443,weather,1,0,myplace,none,today,It is cold outside today.
+444,weather,1,1,place,none,now,Is it cold in Greece now?
+445,weather,1,1,myplace,none,now,Is it cold outside?
+446,weather,1,0,myplace,none,today,It is warm outside today.
+447,weather,1,1,place,none,now,Is it warm in Greece now?
+448,weather,1,1,myplace,none,hour,Is it warm outside in an hour?
+449,weather,1,1,myplace,none,now,Will I get wet when I go outside now?
+450,weather,1,1,myplace,none,now,Is it hailing right now?
+451,weather,1,1,myplace,none,now,Is there hail coming down from the skies?
+452,weather,1,1,myplace,none,now,Do you think I can ride my bike outside without getting wet?
+453,weather,1,1,myplace,none,today,Is it cloudy today?
+454,weather,1,1,myplace,none,now,Are there a lot of clouds?
+455,weather,1,1,myplace,none,now,Is it foggy outside?
+456,weather,1,1,myplace,none,now,Will there be rain when I go outside?
+457,weather,1,1,myplace,none,now,Is it wet outside?
+458,weather,1,1,myplace,none,now,Is it hot outside?
+459,weather,1,1,place,none,hour,What is the weather like in the Malidives in six hours?
+460,weather,1,1,myplace,none,today,Is the sun going to shine today?
+461,weather,1,1,myplace,none,today,Is the sun shining today?
+462,weather,1,1,myplace,none,tomorrow,Is the sun going to shine tomorrow?
+463,weather,1,1,myplace,none,yesterday,Did the sun shine yesterday?
+464,weather,1,1,place,none,now,Is it hot in Crete?
+465,weather,1,1,myplace,none,now,Is it hot?
+466,weather,1,1,myplace,none,today,Will it rain today?
+467,weather,1,1,myplace,none,now,What is the temperature outside?
+468,weather,1,1,myplace,none,now,How many degrees is it outside?
+469,weather,1,1,myplace,none,tomorrow,Do you think it will be hot tomorrow?
+470,weather,1,1,place,none,tomorrow,Will it freeze in Leuven tomorrow?
+471,weather,1,1,place,none,yesterday,Did it freeze in Hasselt yesterday?
+472,weather,1,1,myplace,none,tonight,Will it freeze tonight?
+473,weather,1,1,myplace,none,tonight,Will it be so cold that water freezes tonight?
+474,weather,1,1,myplace,none,today,Will it be so cold that water freezes today?
+475,weather,1,1,myplace,none,now,Is it freezing?
+476,weather,1,1,myplace,none,now,Is it going to freeze?
+477,weather,1,1,place,none,now,Is it freezing in Leuven?
+478,weather,1,1,myplace,none,tomorrow,Do you think it will freeze tomorrow?
+479,heating,1,1,bathroom,on,none,Can you turn on the heating in the bathroom when it freezes outside?
+480,heating,1,0,library,off,none,Turn off the heating in the library when the outdoor temperature climbs above 20 degrees.
+481,heating,1,0,library,off,none,Turn off the heating in the library when the outdoor temperature climbs above 20 degrees fahrenheit.
+482,heating,0,0,none,none,now,Don't do anything with the heating.
+483,heating,0,0,none,none,now,If you want to turn the heating on please don't.
+484,heating,1,0,toilet,on,none,Turn on the heating when the outside temperature falls below 5 degrees celsius.
+485,heating,1,0,toilet,on,none,Turn on the heating when the outside temperature falls below 0 degrees centigrade.
+486,heating,1,1,bathroom,on,hour,Can you turn on the heating in the bathroom in an hour?
+487,heating,1,1,attic,on,hour,Can you turn on the heating in the attic in an hour?
+488,heating,1,1,diningroom,on,hour,Can you turn on the heating in the dining room in an hour?
+489,heating,1,1,basement,on,hour,Can you turn on the heating in the basement in an hour?
+490,heating,1,1,library,on,hour,Can you turn on the heating in the library in an hour?
+491,heating,1,1,kitchen,on,hour,Can you turn on the heating in the kitchen in an hour?
+492,heating,1,1,toilet,on,hour,Can you turn on the heating in the toilet in an hour?
+493,heating,1,1,bathroom,on,now,It is a little cold in the bathroom.
+494,heating,1,1,attic,on,now,It is a little cold in the attic.
+495,heating,1,1,diningroom,on,now,It is a little cold in the dining room.
+496,heating,1,1,basement,on,now,It is a little cold in the basement.
+497,heating,1,1,library,on,now,It is a little cold in the library.
+498,heating,1,1,kitchen,on,now,It is a little cold in the kitchen.
+499,heating,1,1,toilet,on,now,It is a little cold in the toilet.
+500,heating,0,0,none,none,now,Don't turn on the heating now.
+501,heating,1,1,basement,off,hour,Can you turn the heating in the basement lower in an hour?
+502,heating,1,1,cellar,off,hour,Can you turn the heating in the cellar lower in an hour?
+503,heating,1,1,kitchen,off,hour,Can you turn the heating in the kitchen lower in an hour?
+504,heating,1,1,toilet,off,hour,Can you turn the heating in the toilet lower in an hour?
+505,heating,1,1,attic,off,hour,Can you turn the heating in the attic lower in an hour?
+506,heating,1,1,kitchen,off,hour,Can you turn the heating in the kitchen lower in an hour?
+507,heating,1,1,diningroom,off,hour,Can you turn the heating in the diningroom lower in an hour?
+508,heating,1,0,bathroom,on,now,It is cold in the bathroom.
+509,heating,1,0,attic,on,now,It is cold in the attic.
+510,heating,1,0,diningroom,on,now,It is cold in the dining room.
+511,heating,1,0,basement,on,now,It is cold in the basement.
+512,heating,1,0,library,on,now,It is cold in the library.
+513,heating,1,0,kitchen,on,now,It is cold in the kitchen.
+514,heating,1,0,toilet,on,now,It is cold in the toilet.
+515,heating,1,0,bathroom,off,now,It is hot in the bathroom.
+516,heating,1,0,attic,off,now,It is hot in the attic.
+517,heating,1,0,diningroom,off,now,It is hot in the dining room.
+518,heating,1,0,basement,off,now,It is hot in the basement.
+519,heating,1,0,library,off,now,It is hot in the library.
+520,heating,1,0,kitchen,off,now,It is hot in the kitchen.
+521,heating,1,0,toilet,off,now,It is hot in the toilet.
+522,heating,1,1,kitchen,on,minute,Can you turn on the heating in the kitchen in 10 minutes for me please?
+523,heating,1,1,livingroom,on,minute,Can you turn on the heating in the living room in 11 minutes for me please?
+524,heating,1,1,livingroom,on,minute,Can you turn on the heating in the living room in 5 minutes for me please?
+525,heating,1,1,livingroom,on,minute,Can you turn on the heating in the living room in a minute for me please?
+526,heating,1,1,livingroom,on,minute,Can you turn on the heating in the living room in 2 minutes for me please?
+527,heating,1,1,livingroom,on,minute,Can you turn on the heating in the living room in 1 minute for me please?
+528,heating,1,1,livingroom,on,minute,Can you turn on the heating in the living room in a minute for me please?
+529,heating,1,1,library,on,minute,Can you turn on the heating in the library in 11 minutes for me please?
+530,heating,1,1,library,on,minute,Can you turn on the heating in the library in 5 minutes for me please?
+531,heating,1,0,toilet,off,hour,Turn the heating off in the bathroom in an hour.
+532,heating,0,0,none,off,hour,Don't turn off the heating in an hour.
+533,heating,1,0,cellar,on,now,Make it less cold in the cellar.
+534,heating,1,0,basement,off,now,Make it colder in the basement.
+535,heating,1,1,bathroom,on,now,Can you turn the heating higher in the bathroom?
+536,shutters,1,0,livingroom,down,now,Lower the shutters in the living room.
+537,shutters,1,0,kitchen,down,now,Lower the shutters in the kitchen.
+538,shutters,1,0,library,down,now,Lower the shutters in the library.
+539,shutters,1,0,basement,down,now,Lower the shutters in the basement.
+540,shutters,1,0,cellar,down,now,Lower the shutters in the cellar.
+541,shutters,1,0,bathroom,down,now,Lower the shutters in the bathroom.
+542,shutters,1,0,toilet,down,now,Lower the shutters in the toilet.
+543,shutters,1,0,livingroom,up,now,Raise the shutters in the living room.
+544,shutters,1,0,kitchen,up,now,Raise the shutters in the kitchen.
+545,shutters,1,0,library,up,now,Raise the shutters in the library.
+546,shutters,1,0,basement,up,now,Raise the shutters in the basement.
+547,shutters,1,0,cellar,up,now,Raise the shutters in the cellar.
+548,shutters,1,0,bathroom,up,now,Raise the shutters in the bathroom.
+549,shutters,1,0,toilet,up,now,Raise the shutters in the toilet.
+550,shutters,0,0,none,none,now,Don't do anything with the shutters.
+551,shutters,1,0,toilet,down,now,The sun is blinding me in the toilet.
+552,shutters,1,0,none,down,now,Turn down the window shutters.
+553,shutters,1,0,none,up,minute,Open the window shutters in a minute for me please.
+554,shutters,1,0,basement,down,hour,Let the shutters down in the basement in an hour.
+555,shutters,1,1,kitchen,down,now,Shut the shutters in the kitchen.
+556,shutters,1,1,none,down,minute,Shut the shutters in a minute.
+557,shutters,1,0,library,down,now,It is too light in the library.
+558,shutters,1,0,basement,down,none,Let the shutters down in the basement when it is light outside.
+559,shutters,1,0,basement,down,none,Open up the shutters in the library when it is light outside.
+560,shutters,1,0,kitchen,down,now,It is too bright in the kitchen.
+561,shutters,1,0,bathroom,down,none,Shut down the shutters when it gets too hot in the bathroom.
+562,shutters,1,0,basement,up,none,Open up the shutters when it gets below 10 degrees fahrenheit.
+563,shutters,0,0,kitchen,none,none,Don't do anything when it gets hot in the kitchen.
+564,toaster,0,0,bathroom,none,now,I will not like it when you turn on the toaster right now.
+565,toaster,1,1,kitchen,on,now,Can you turn on the toaster for me please?
+566,toaster,1,0,kitchen,off,now,Turn off the toaster for me please.
+567,toaster,0,0,kitchen,off,hour,Don't turn off the toaster in an hour.
+568,toaster,0,0,kitchen,off,minute,Don't turn off the toaster in a minute.
+569,toaster,1,0,kitchen,on,month,Turn on the toaster in a month.
+570,toaster,1,0,kitchen,on,minute,Turn on the toaster in a minute.
+571,toaster,1,0,kitchen,on,day,Turn on the toaster in a day.
+572,toaster,1,0,kitchen,off,hour,Turn off the toaster in an hour.
+573,toaster,1,0,kitchen,off,minute,Turn off the toaster in a minute.
+574,toaster,1,0,kitchen,off,day,Turn off the toaster in a day.
+575,toaster,1,0,kitchen,off,hour,Turn off the toaster in an hour.
+576,toaster,1,0,kitchen,on,now,Make the toaster warm.
+577,toaster,1,0,kitchen,off,now,Make the toaster cold.
+578,toaster,1,0,kitchen,off,now,Make sure the toaster gets gradually colder.
+579,toaster,1,0,kitchen,off,hour,Shut off the electricity to the toaster in an hour for me.
+580,toaster,1,0,kitchen,off,day,Shut off the electricity to the toaster in a day for me.
+581,toaster,1,1,kitchen,none,now,How long before my toast will be ready?
+582,toaster,1,1,kitchen,none,now,How long before I will get my toast?
+583,toaster,1,1,kitchen,on,hour,Could you make me some toast in an hour?
+584,toaster,1,1,kitchen,none,now,How long has the toaster been on?
+585,toaster,1,1,kitchen,on,today,Could you make me some toast today?
+586,toaster,1,1,kitchen,on,yesterday,Could you make me some toast yesterday?
+587,toaster,0,0,kitchen,none,now,Don't turn on the toaster.
+588,toaster,1,0,kitchen,off,now,Power down the toaster.
+589,toaster,1,0,kitchen,off,hour,Power down the toaster in an hour.
+590,toaster,1,0,bathroom,off,hour,Power down the toaster in the bathroom in an hour.
+591,toaster,1,0,library,off,hour,Power down the toaster in the library in an hour.
+592,toaster,1,0,livingroom,off,day,Power down the toaster in the living room in a day.
+593,toaster,1,0,kitchen,on,none,Turn on the toaster when it is 6 AM.
+594,toaster,1,1,kitchen,on,none,Can you turn on the toaster when I wake up.
+595,toaster,1,1,library,on,none,Can you turn on the toaster when the sun rises.
+596,garagedoor,1,1,garage,up,none,Can you open up the garage door when I get home for me please?
+597,garagedoor,1,0,garage,down,now,Let the garage door down now.
+598,garagedoor,1,1,garage,up,hour,Can you open the garage door in an hour?
+599,garagedoor,1,0,garage,down,day,Close the garage door in a day for me please.
+600,garagedoor,1,0,garage,down,hour,Shut down the garage door in an hour for me.
+601,garagedoor,1,1,garage,down,tomorrow,Can you put the garage door down tomorrow?
+602,garagedoor,1,1,garage,down,tomorrow,Can you put the garage door down yesterday?
+603,garagedoor,1,1,garage,up,tomorrow,Can you put the garage door up tomorrow?
+604,garagedoor,1,1,garage,up,yesterday,Can you put the garage door up yesterday?
+605,garagedoor,1,0,garage,down,minute,Shut down the garage door in a minute for me.
+606,garagedoor,1,0,garage,down,day,Shut down the garage door in an day for me.
+607,garagedoor,1,0,garage,up,minute,Open up the garage door in a minute for me.
+608,garagedoor,1,0,garage,up,day,Open up the garage door in an day for me.
+609,garagedoor,1,0,garage,up,now,Make sure my car can get out the garage.
+610,garagedoor,1,1,garage,up,now,Will you make sure my car doesn't hit the garage door?
+611,garagedoor,1,0,garage,down,minute,Shut down the garage door in 21 minutes for me.
+612,garagedoor,1,0,garage,down,minute,Shut down the garage door in 15 minutes for me.
+613,garagedoor,1,0,garage,down,minute,Shut down the garage door in fourteen minutes for me.
+614,garagedoor,1,0,garage,down,minute,Shut down the garage door in sixteen minutes for me.
+615,garagedoor,0,0,garage,down,minute,Don't shut down the garage door in 43 minutes for me.
+616,garagedoor,0,0,garage,down,minute,Don't shut down the garage door in 112 minutes for me.
+617,garagedoor,0,0,garage,down,minute,Don't shut down the garage door in eighteen minutes for me.
+618,garagedoor,0,0,garage,down,minute,Don't shut down the garage door in sixteen minutes for me.
+619,garagedoor,1,1,garage,none,now,Can you please stop doing something to the garage door?
+620,garagedoor,1,1,garage,up,now,Can you please stop letting the garage door down?
+621,garagedoor,1,1,garage,down,none,Shut the garage door when I get home.
+622,garagedoor,1,0,garage,off,now,Power down the garage door.
+623,garagedoor,1,0,garage,off,minute,Power down the garage door in a minute.
+624,garagedoor,1,0,garage,off,hour,Power down the garage door in an hour.
+625,garagedoor,1,0,garage,off,day,Power down the garage door in six days.
+626,coffeemachine,1,1,kitchen,on,none,Can you turn on the coffee machine when I wake up?
+627,coffeemachine,0,0,kitchen,none,none,Don't do anything when I wake up.
+628,coffeemachine,1,0,kitchen,on,now,Turn on the coffee machine for me.
+629,coffeemachine,1,1,kitchen,off,minute,Can you turn off the coffee machine in a minute?
+630,coffeemachine,1,1,kitchen,none,now,How long before the coffee machine will be done?
+631,coffeemachine,1,1,kitchen,none,now,How long before my coffee is ready?
+632,coffeemachine,1,0,kitchen,off,now,Cut off electricity to my coffee machine.
+633,coffeemachine,1,0,kitchen,on,now,Give power to my cofeemachine.
+634,coffeemachine,1,0,kitchen,on,now,Let the coffee flow!
+635,coffeemachine,1,1,kitchen,on,now,Could you get me some coffee?
+636,coffeemachine,1,1,kitchen,on,hour,Could you give me some coffee in an hour?
+637,coffeemachine,1,1,kitchen,none,now,How long has the coffee machine been running?
+638,coffeemachine,1,0,kitchen,on,none,Turn on the coffeemachine when I get home.
+639,coffeemachine,1,1,livingroom,on,now,Power up the coffee machine in the living room for me.
+640,coffeemachine,1,1,bathroom,off,now,Turn down the coffee machine in the bathroom.
+641,coffeemachine,1,1,kitchen,on,now,Give me coffee.
+642,coffeemachine,0,0,kitchen,none,now,Don't give me any coffee.
+643,coffeemachine,0,0,kitchen,none,now,Don't turn on the coffee machine.
+644,coffeemachine,0,0,kitchen,none,now,Don't do anything to the coffee machine.
+645,coffeemachine,1,0,kitchen,off,now,Cut off the electricity of the coffee machine.
+646,coffeemachine,1,0,kitchen,off,now,Power down the coffeemachine.
+647,coffeemachine,1,0,kitchen,off,hour,Power down the coffeemachine in an hour.
+648,coffeemachine,1,0,bathroom,off,hour,Power down the coffeemachine in the bathroom in an hour.
+649,coffeemachine,1,0,attic,off,day,Power down the coffeemachine in the attic in six days.
+650,coffeemachine,1,0,kitchen,on,none,Turn on the coffeemachine when it is six AM.
+651,coffeemachine,1,0,kitchen,on,none,Turn off the coffeemachine when the coffee is done.
+652,time,1,1,none,none,now,What time is it?
+653,time,1,1,none,none,now,What does the clock say?
+654,time,0,0,none,none,now,I don't want to know what time it is.
+655,time,1,1,none,none,now,Do you know what time it is?
+656,time,1,1,none,none,now,Do you want tot tell me the time?
+657,time,1,0,none,none,now,Don't tell me the time.
+658,time,1,0,none,none,minute,Tell me the time in 4 minutes.
+659,time,0,0,none,none,now,Time.
+660,time,0,0,none,none,now,I don't want you to tell me the time.
+661,time,1,0,none,none,hour,Tell me the time in an hour.
+662,time,1,0,none,none,day,Tell me the time in a day.
+663,time,1,0,none,none,now,What does te clock say?
