@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-src = cv2.imread("qrcode.png")
+src = cv2.imread("qr.png")
 cv2.imshow("image", src)
 # gray image
 # to work with detector first convert to gray
