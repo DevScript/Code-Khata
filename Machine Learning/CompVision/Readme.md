@@ -33,3 +33,5 @@ Computer Vision is a sub-branch of Machine Learning.If you are willing to learn 
 13. Facial_features.py = Similar to previous snippet but this can identify eyes and smile in human faces trained using harrcasscade classifier.
 
 14. QRcode.py = this snippet can be used to decode any hidden message behind a QR code.
+
+# Thankyou for letting us be a part of your journey.
