@@ -1,0 +1,24 @@
+.text-center{
+    text-align: center;
+}
+
+.flex{
+    display: flex;
+    border-style: solid;
+    margin: 0px 595px; 
+    height: 54vh;
+    width:42vh;
+    padding: 10px;
+    background-color: black;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-col{
+    flex-direction: column;
+}
+
+.items-center{
+    align-items: center;
+}
