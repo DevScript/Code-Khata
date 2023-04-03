@@ -44,7 +44,7 @@ public:
                     q.push(node->right);
             }
             
-            if(levelCount % 2 == 0) // reverse this achiveve Zig-Zag traversal
+            if(levelCount % 2 == 0) // reverse this to achieve Zig-Zag traversal
                 reverse(level.begin(), level.end());
 
             bfs.emplace_back(level);
