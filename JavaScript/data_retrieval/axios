@@ -1,0 +1,18 @@
+// npm install axios
+
+import React, { useEffect } from 'react';
+import axios from 'axios';
+
+function App() {
+   useEffect(() => {
+      axios.get('https://site.com/api/data')
+      .then(response => console.log(response.data))
+      .catch(error => console.error('Error fetching data:', error));
+   }, []);
+
+   return (
+      <div> Different ways to fetch Data </div>
+   );
+}
+
+export default App;
