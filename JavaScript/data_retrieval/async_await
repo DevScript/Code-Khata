@@ -1,0 +1,23 @@
+import React, { useEffect } from 'react';
+
+async function fetchData() {
+   try {
+      const response = await fetch('https://site.com/api/data');
+      const data = await response.json();
+      console.log(data);
+   } catch (error) {
+      console.error('Error fetching data:', error);
+   }
+}
+
+function App() {
+   useEffect(() => {
+      fetchData();
+   }, []);
+
+   return (
+      <div> Different ways to fetch Data </div>
+   );
+}
+
+export default App;
