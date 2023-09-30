@@ -1,0 +1,36 @@
+// npm install react-query
+
+import React from 'react';
+import { useQuery } from 'react-query';
+
+const fetchData = async () => {
+   const response = await fetch('https://site.com/api/data');
+   const data = await response.json();
+   return data;
+};
+
+function App() {
+   const { data, isLoading, isError, error } = useQuery('data', fetchData);
+
+   if (isLoading) {
+      return <div>Loading...</div>;
+   }
+
+   if (isError) {
+      return <div>Error: {error.message}</div>;
+   }
+
+   return (
+      <div>
+         {data && (
+            <ul>
+               {data.map(item => (
+                  <li key={item.id}>{item.name}</li>
+               ))}
+            </ul>
+         )}
+      </div>
+   );
+}
+
+export default App;
